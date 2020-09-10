@@ -1,5 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Hi There!</h1>
+    <p>
+      I'm a web developer based in Edinburgh, Scotland. I have a passion for web design!
+    </p>
   </div>
 </template>
+
+<style scoped>
+
+body {
+  background-color: white;
+}
+
+</style>
