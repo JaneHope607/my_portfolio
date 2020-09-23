@@ -13,11 +13,12 @@
 
 <script>
 import Homepage from '@/components/HomePage.vue'
+import Typewriter from './components/Typewriter.vue';
 
 export default {
   name: "App",
   components: {
-    'home-page': Homepage
+    Typewriter
   }
 }
 </script>
