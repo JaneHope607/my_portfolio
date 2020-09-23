@@ -31,7 +31,7 @@ html, body {
     margin-top: 50px;
     padding: 0px;
     height: 100%;
-    background-color: rgb(206, 226, 236);
+    background-color: rgb(170, 195, 207);
 }
 
 #nav {
@@ -48,10 +48,15 @@ html, body {
 }
 
 .nav-link {
-  margin-right: 1.5rem;
+  margin-right: 5rem;
   text-decoration: none;
   color: #4d4d4d;
-  
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: rgb(170, 195, 207);
 }
 
 </style>
