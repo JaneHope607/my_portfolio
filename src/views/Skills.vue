@@ -1,37 +1,67 @@
 <template>
   <div class="flex-container">
-          <h2>Skills</h2>
+    <h2>Skills</h2>
       <div class="skills-block-container">
 
-       <div class="skills-block">
+       <section class="skills-block">
            <img src="../assets/vue.png" alt="laptops"/>
-           <h3 class="skills-text">Vue</h3>
-       </div>  
+           <h3 class="skills-text">Vue.js</h3>
+       </section>  
 
-       <div class="skills-block">
+       <section class="skills-block">
           <img src="../assets/react.png" alt="mobile phone"/>
-          <h3 class="skills-text">React</h3>
-       </div>
+          <h3 class="skills-text">React.js</h3>
+       </section>
 
-       <div class="skills-block">
+       <section class="skills-block">
           <img src="../assets/github.png" alt="man with camera"/>
           <h3 class="skills-text">GitHub</h3>
-       </div>
+       </section>
 
-       <div class="skills-block">
-          <img src="../assets/logo.png" alt="computer with stats"/>
-          <h3 class="skills-text">Data</h3>
-       </div>
+       <section class="skills-block">
+          <img src="../assets/node.png" alt="computer with stats"/>
+          <h3 class="skills-text">Node.js</h3>
+       </section>
 
-       <div class="skills-block">
-          <img src="../assets/logo.png" alt="chess pieces"/>
-          <h3 class="skills-text">Business</h3>
-       </div>
+       <section class="skills-block">
+          <img src="../assets/mongodb.png" alt="chess pieces"/>
+          <h3 class="skills-text">MongoDB</h3>
+       </section>
 
-       <div class="skills-block">
+       <section class="skills-block">
+          <img src="../assets/express.png" alt="smart watch"/>
+          <h3 class="skills-text">Express.js</h3>
+       </section>
+
+       <section class="skills-block">
+          <img src="../assets/es6.png" alt="smart watch"/>
+          <h3 class="skills-text">JS ES6</h3>
+       </section>
+
+       <section class="skills-block">
+          <img src="../assets/js.png" alt="smart watch"/>
+          <h3 class="skills-text">JavaScript</h3>
+       </section>
+
+       <section class="skills-block">
+          <img src="../assets/css3.png" alt="smart watch"/>
+          <h3 class="skills-text">CSS3</h3>
+       </section>
+
+       <section class="skills-block">
           <img src="../assets/logo.png" alt="smart watch"/>
           <h3 class="skills-text">Marketing</h3>
-       </div>
+       </section>
+
+       <section class="skills-block">
+          <img src="../assets/logo.png" alt="smart watch"/>
+          <h3 class="skills-text">Marketing</h3>
+       </section>
+
+       <section class="skills-block">
+          <img src="../assets/logo.png" alt="smart watch"/>
+          <h3 class="skills-text">Marketing</h3>
+       </section>
     </div>
 </div>
 
@@ -48,15 +78,16 @@ export default {
 
 <style scoped>
 
-.flex-container {
+/* .flex-container {
     display: inline-flex;  
     max-width: 100%;
     flex-direction: column;
-}
+} */
 
-.learning-flex-container h2 {
-    margin: 2rem 0;
+h2 {
+    margin: 4rem;
     text-align: center;
+    font-size: 3rem;
 }
 
 .skills-block-container {
@@ -90,7 +121,7 @@ img {
 
 .skills-text {
     text-align: center;
-    margin: 0rem 1rem;
+    margin-bottom: 1.5rem;
 }
 
 </style>
