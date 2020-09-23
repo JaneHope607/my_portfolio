@@ -1,6 +1,8 @@
 <template>
   <div class="flex-container">
-    <h2>Skills</h2>
+    <h2>Tech Stack</h2>
+      <h3>As a Front-End enthusiast, I've worked with many different technologies. I really enjoy working with JavaScript and using Vue as a framework. 
+        Despite my preference for Front-End, I am very much open to Back-End related positions too and am always keen to work with and explore different languages.</h3>
       <div class="skills-block-container">
 
        <section class="skills-block">
@@ -49,18 +51,18 @@
        </section>
 
        <section class="skills-block">
-          <img src="../assets/logo.png" alt="smart watch"/>
-          <h3 class="skills-text">Marketing</h3>
+          <img src="../assets/html5.png" alt="smart watch"/>
+          <h3 class="skills-text">HTML5</h3>
        </section>
 
        <section class="skills-block">
           <img src="../assets/logo.png" alt="smart watch"/>
-          <h3 class="skills-text">Marketing</h3>
+          <h3 class="skills-text">PostgreSQL</h3>
        </section>
 
        <section class="skills-block">
           <img src="../assets/logo.png" alt="smart watch"/>
-          <h3 class="skills-text">Marketing</h3>
+          <h3 class="skills-text">Spring</h3>
        </section>
     </div>
 </div>

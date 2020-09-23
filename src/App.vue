@@ -28,10 +28,10 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #4d4d4d;
-    margin: 0px;
+    margin-top: 50px;
     padding: 0px;
     height: 100%;
-
+    background-color: rgb(206, 226, 236);
 }
 
 #nav {
@@ -40,12 +40,11 @@ html, body {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 4rem;
   z-index: 5;
-  margin: 0;
-  padding: 0;
   justify-content: flex-end;
   align-self: center;
+  background-color: whitesmoke;
+  padding: 2rem;
 }
 
 .nav-link {
@@ -54,13 +53,5 @@ html, body {
   color: #4d4d4d;
   
 }
-
-// #app {
-//     background: url('./assets/SKYLINE.png');
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     height: 100%;
-// }
 
 </style>
