@@ -1,5 +1,4 @@
 <template>
-<p>Hello</p>
 </template>
 
 <script>
@@ -12,9 +11,5 @@ export default {
 </script>
 
 <style scoped>
-
-body {
-    background: url('../assets/SKYLINE.png');
-}
 
 </style>
