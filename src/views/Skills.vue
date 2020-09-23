@@ -90,11 +90,14 @@ h2 {
     margin: 4rem;
     text-align: center;
     font-size: 3rem;
+    font-weight: normal;
+
 }
 
 h3 {
   padding-bottom: 2rem;
   text-align: center;
+  font-weight: normal;
 }
 
 .skills-block-container {

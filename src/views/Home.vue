@@ -1,28 +1,24 @@
 <template>
-  <div>
-    <h1>HI, MY NAME IS JANE O'DONNELL. I'M A DEVELOPER BASED IN EDINBURGH</h1>
-    <h2>Want to know more?</h2>
+  <div class="home">
+     <Typewriter class="typewriter"/>
   </div>
 </template>
 
 <script>
 
-import HomePage from '@/components/HomePage.vue'
+import Typewriter from '../components/Typewriter.vue';
+
 
 export default {
   name: 'Home',
+  components: {
+    Typewriter
+  }
 }
 
 </script>
 
 <style scoped>
 
-h1, h2 {
-  color: rgb(184, 210, 223);
-}
-
-div {
-  background-color: rgb(54, 59, 63)
-}
 
 </style>

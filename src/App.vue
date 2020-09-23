@@ -7,19 +7,14 @@
       <router-link to="/contact" class="nav-link">Contact</router-link>
     </div>
     <router-view/>
-    <home-page></home-page>
   </div>
 </template>
 
 <script>
-import Homepage from '@/components/HomePage.vue'
-import Typewriter from './components/Typewriter.vue';
 
 export default {
   name: "App",
-  components: {
-    Typewriter
-  }
+
 }
 </script>
 
@@ -32,7 +27,7 @@ html, body {
     margin-top: 50px;
     padding: 0px;
     height: 100%;
-    background-color: rgb(170, 195, 207);
+    background-color: #f7f7fc;
 }
 
 #nav {
@@ -44,7 +39,7 @@ html, body {
   z-index: 5;
   justify-content: flex-end;
   align-self: center;
-  background-color: whitesmoke;
+  background-color: #D2B94B;
   padding: 2rem;
 }
 
@@ -52,12 +47,11 @@ html, body {
   margin-right: 5rem;
   text-decoration: none;
   color: #4d4d4d;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav-link:hover {
-  color: rgb(170, 195, 207);
+  color: #f7f7fc;
 }
 
 </style>
