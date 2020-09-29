@@ -39,7 +39,7 @@ html, body {
   z-index: 5;
   justify-content: flex-end;
   align-self: center;
-  background-color: #D2B94B;
+  background-color: rgb(214, 179, 22);
   padding: 2rem;
 }
 
