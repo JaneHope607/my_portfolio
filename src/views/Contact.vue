@@ -2,31 +2,37 @@
     <div class="contact">
         <h1>Contact</h1>
 
-        <form method="post" name="contact-form" @sumbit.prevent="sendEmail">
+        <form method="post" role="form" @submit.prevent="sendEmail">
             <div class="contact-form">
-                <label>Your Name</label>
+                <label for="name">Your Name</label>
                 <input
                     type="text"
                     name="name"
+                    id="name"
                     placeholder="Enter Your Name..."
-                    v-model="name">
+                    v-model="nameText"
+                >
 
-                <label>Your Email</label>
+                <label for="email">Your Email</label>
                 <input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Enter Your Email..."
-                    v-model="email">
+                    v-model="emailText"
+                >
 
-                <label>Your Message</label>
+                <label for="msg">Your Message</label>
                 <textarea 
-                    name="message"
+                    name="msg"
                     rows="5"
+                    id="msg"
                     placeholder="Enter Your Message..."
-                    v-model="msg">
+                    v-model="messageText"
+                >
                 </textarea>
 
-                <button type="submit" :disabled="!name || !email || !msg"></button>
+                <input type="submit" :disabled="!nameText || !emailText || !messageText">
 
                 <section v-if="loadingMsg">
                     <p class="loading-text">Delivering Your Email...</p>
@@ -40,34 +46,35 @@
 import axios from 'axios';
 
 export default {
-    name: 'Contact',
+    name: 'contact',
     data() {
       return {
-            name: '',
-            email: '',
-            msg: '',
-            loadingMsg: false
+        loadingMsg: false,
+        nameText: '',
+        emailText: '',
+        messageText: '',
         };
     },
 
     methods: {
         sendEmail() {      
             this.loadingMsg= true;      
-            axios.post('https://formspree.io/xknpgzke',
-                this.name,          
-                this.email,          
-                this.msg,
-            { headers: {
-                'Content-type': 'application/x-www-form-urlencoded',
-            }
-            }).then((response) => {
-                this.name = '';
-                this.email = '';
-                this.msg = '';
+            axios.post(
+                'https://formspree.io/xknpgzke',
+                {
+                name: this.nameText,          
+                email: this.emailText,          
+                message: this.messageText,
+            })
+            .then((response) => {
+                this.nameText = '';
+                this.emailText = '';
+                this.messageText = '';
                 this.loadingMsg = false;  
+                this.$router.push({ path: '/success' });
             }).catch((error) => {        
-            if (error.response) {
-                alert(error.response.data);
+                if (error.response) {
+                    alert(error.response.data);
                 }
             });
         },

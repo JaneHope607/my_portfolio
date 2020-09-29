@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Skills from '../views/Skills.vue'
+import Success from '../views/Success.vue';
 
 const routes = [
   {
@@ -27,7 +28,12 @@ const routes = [
     path: '/skills',
     name: 'Skills',
     component: Skills
-  }
+  },
+  {
+    path: '/success',
+    name: 'success',
+    component: Success,
+  },
 ]
 
 const router = createRouter({
