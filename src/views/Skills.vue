@@ -85,11 +85,10 @@ export default {
 } */
 
 h2 {
-    margin: 4rem;
+    /* margin: 4rem; */
     text-align: center;
     font-size: 3rem;
     font-weight: normal;
-
 }
 
 h3 {

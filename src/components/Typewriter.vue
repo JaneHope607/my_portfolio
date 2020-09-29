@@ -69,7 +69,6 @@ import { setTimeout } from 'timers';
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 2rem;
   }
   
   span {
