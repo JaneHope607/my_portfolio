@@ -1,8 +1,8 @@
 <template>
-    <div class="contact">
-        <h1>Contact</h1>
+    <div class="container-contact">
+        <h1>Get In Touch</h1>
 
-        <form method="post" role="form" @submit.prevent="sendEmail">
+        <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
             <div class="contact-form">
                 <label for="name">Your Name</label>
                 <input
@@ -39,6 +39,9 @@
                 </section>
             </div>
         </form>
+
+        <section class="image-left">
+		</section>
     </div>
 </template>
 
@@ -85,6 +88,11 @@ export default {
 
 <style scoped>
 
+
+body, html {
+	height: 100%;
+}
+
 input,
 textarea {
     background-color: cream;
@@ -97,8 +105,31 @@ textarea:focus {
     border-radius: 2px;
 }
 
+label {
+  display: block;
+  margin: 0;
+}
+
 button {
     padding: 10px;
+}
+
+.container-contact {
+    width: 100%;
+    display: flex;
+}
+
+.image-left {
+    background-image: url('../assets/bg-01.jpg');
+    width: calc(100% - 560px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 30px 15px 0px 15px;
+    display: block;
+    float: left;
 }
 
 </style>

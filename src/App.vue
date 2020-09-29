@@ -1,6 +1,7 @@
 <template>
   <div id="app-container">
     <div id="nav">
+      <img class="logo" src="./assets/logo.png" alt="logo">
       <router-link to="/" class="nav-link">Home</router-link>
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/skills" class="nav-link">Skills</router-link>
@@ -41,6 +42,10 @@ html, body {
   align-self: center;
   background-color: rgb(214, 179, 22);
   padding: 2rem;
+}
+
+.logo {
+  margin-left: 1.5rem;
 }
 
 .nav-link {
