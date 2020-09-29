@@ -10,8 +10,9 @@
 
 <script>
 import { setTimeout } from 'timers';
+
   export default {
-    data: () => {
+    data() {
       return {
         typeValue: '',
         typeStatus: false,
@@ -87,7 +88,7 @@ import { setTimeout } from 'timers';
       display: inline-block;
       margin-left: 3px;
       width: 4px;
-      background-color: #fff;
+      background-color: #4d4d4d;
       animation: cursorBlink 1s infinite;
     }
 
@@ -97,7 +98,7 @@ import { setTimeout } from 'timers';
   }
 
   @keyframes cursorBlink {
-    49% { background-color: #fff; }
+    49% { background-color: #4d4d4d; }
     50% { background-color: transparent; }
     99% { background-color: transparent; }
   }
