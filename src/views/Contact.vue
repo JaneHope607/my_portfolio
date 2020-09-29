@@ -2,36 +2,78 @@
     <div class="contact">
         <h1>Contact</h1>
 
-        <form action="https://formspree.io/xknpgzke" method="post">
+        <form method="post" name="contact-form" @sumbit.prevent="sendEmail">
             <div class="contact-form">
-                <label>Name</label>
-                <input type="text" name="name" v-model="name">
+                <label>Your Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter Your Name..."
+                    v-model="name">
 
-                <label>Message</label>
-                <textarea v-model="msg"></textarea>
+                <label>Your Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Your Email..."
+                    v-model="email">
 
-                <button type="submit">Send</button>
+                <label>Your Message</label>
+                <textarea 
+                    name="message"
+                    rows="5"
+                    placeholder="Enter Your Message..."
+                    v-model="msg">
+                </textarea>
+
+                <button type="submit" :disabled="!name || !email || !msg"></button>
+
+                <section v-if="loadingMsg">
+                    <p class="loading-text">Delivering Your Email...</p>
+                </section>
             </div>
         </form>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-    data: function() {
-        return {
+    name: 'Contact',
+    data() {
+      return {
             name: '',
-            msg: ''
-        }
+            email: '',
+            msg: '',
+            loadingMsg: false
+        };
     },
 
     methods: {
-        submit(e) {
-            e.preventDefault();
-            console.log('submit');
-        }
-    }
-}
+        sendEmail() {      
+            this.loadingMsg= true;      
+            axios.post('https://formspree.io/xknpgzke',
+                this.name,          
+                this.email,          
+                this.msg,
+            { headers: {
+                'Content-type': 'application/x-www-form-urlencoded',
+            }
+            }).then((response) => {
+                this.name = '';
+                this.email = '';
+                this.msg = '';
+                this.loadingMsg = false;  
+            }).catch((error) => {        
+            if (error.response) {
+                alert(error.response.data);
+                }
+            });
+        },
+    },
+};
+
 </script>
 
 <style scoped>
