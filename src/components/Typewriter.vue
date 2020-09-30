@@ -64,7 +64,6 @@ import { setTimeout } from 'timers';
 <style lang="scss" scoped>
 
   .container {
-    width: 100%;
     display: block;
     justify-content: center;
     align-items: center;

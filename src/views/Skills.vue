@@ -78,57 +78,56 @@ export default {
 
 <style scoped>
 
-/* .flex-container {
-    display: inline-flex;  
-    max-width: 100%;
-    flex-direction: column;
-} */
+.flex-container {
+   display: inline-flex;  
+   flex-direction: column;
+}
 
 h2 {
-    /* margin: 4rem; */
-    text-align: center;
-    font-size: 3rem;
-    font-weight: normal;
+   margin: 4rem;
+   text-align: center;
+   font-size: 3rem;
+   font-weight: normal;
 }
 
 h3 {
-  padding-bottom: 2rem;
-  text-align: center;
-  font-weight: normal;
+   padding-bottom: 2rem;
+   text-align: center;
+   font-weight: normal;
 }
 
 .skills-block-container {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 2rem 2rem;
-    max-width: 100%;
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
-    margin-bottom: 4.5rem;
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   gap: 2rem 2rem;
+   max-width: 100%;
+   margin-left: 4.5rem;
+   margin-right: 4.5rem;
+   margin-bottom: 4.5rem;
 }
 
 .skills-block {
-    display: block;
-    flex-direction: column;
-    background-color: white;
-    text-align: center;
-    box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
-    transition: all 500ms ease-in-out;
+   display: block;
+   flex-direction: column;
+   background-color: white;
+   text-align: center;
+   box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
+   transition: all 500ms ease-in-out;
 }
 
 .skills-block:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 15px hsla(210, 6%, 42%, 0.73);
+   transform: scale(1.05);
+   box-shadow: 10px 10px 15px hsla(210, 6%, 42%, 0.73);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+   max-width: 100%;
+   height: auto;
 }
 
 .skills-text {
-    text-align: center;
-    margin-bottom: 1.5rem;
+   text-align: center;
+   margin-bottom: 1.5rem;
 }
 
 </style>

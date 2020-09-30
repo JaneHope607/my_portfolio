@@ -27,10 +27,6 @@ export default {
 
 <style scoped>
 
-body {
-  margin-top: 50px;
-}
-
 .btn-primary {
   background-color: #515796;
   border-color: #515796;

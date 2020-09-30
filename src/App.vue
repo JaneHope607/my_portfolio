@@ -1,3 +1,4 @@
+
 <template>
   <div id="app-container">
     <header class="nav-container">
@@ -22,15 +23,23 @@ export default {
 </script>
 
 <style lang="scss">
-  
-html {
+
+* {
+  box-sizing: border-box
+}
+
+html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
   margin-top: 6rem;
   padding: 0px;
-  height: 100%;
   background-color: #f7f7fc;
+}
+
+#app-container {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .nav-container {

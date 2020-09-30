@@ -1,6 +1,10 @@
 <template>
-    <div class="container-contact">
-        <h1>Get In Touch</h1>
+    <section class="container-contact">
+        <!-- <h1>Get In Touch</h1> -->
+
+        <div class="col-left">
+            <img src="../assets/bg-01.jpg" />
+		</div>
 
         <div class="col-right">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
@@ -11,6 +15,7 @@
                     id="name"
                     placeholder="Enter Your Name..."
                     v-model="nameText"
+                    class="input"
                 >
 
                 <label for="email">Your Email</label>
@@ -20,6 +25,7 @@
                     id="email"
                     placeholder="Enter Your Email..."
                     v-model="emailText"
+                    class="input"
                 >
 
                 <label for="msg">Your Message</label>
@@ -29,6 +35,7 @@
                     id="msg"
                     placeholder="Enter Your Message..."
                     v-model="messageText"
+                    class="input"
                 >
                 </textarea>
 
@@ -39,11 +46,7 @@
                 </section>
             </form>
         </div>
-
-         <div class="col-left">
-            <img src="../assets/bg-01.jpg" />
-		</div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -89,9 +92,10 @@ export default {
 
 <style scoped>
 
-
-body, html {
-	height: 100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -115,22 +119,31 @@ button {
     padding: 10px;
 }
 
+img {
+    max-width:100%;
+    max-height:100%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    height: 100%;
+}
+
 .container-contact {
-    width: 100%;
+   display: flex;
 }
 
 .col-left {
-    height: 100vh;
-    width: 50%;
-    left: 0;
-    position: relative;
+    padding: 1rem;
+    flex: 1;
 }
 
 .col-right {
-    height: 100vh;
-    width: 50%;
-    left: 50%;
-    position: relative;
+    padding: 1rem;
+    flex: 1;
 }
 
 </style>

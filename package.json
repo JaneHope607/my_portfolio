@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
-    "vue": "^3.0.0-0",
+    "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vue-typed-js": "^0.1.2",
     "vuex": "^4.0.0-0"
