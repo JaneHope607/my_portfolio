@@ -1,4 +1,3 @@
-
 <template>
   <div id="app-container">
     <header class="nav-container">

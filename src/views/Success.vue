@@ -1,10 +1,6 @@
 <template>
-  <div class="container-fluid p-0 justify-content-center d-flex">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
-        <h2 class="mb-5">{{$t('contact.contact_success_title')}}</h2>
-        <p class>{{$t('contact.contact_success_content')}}</p>
-        <router-link to="/" class="btn btn-primary">{{$t('menu.btn_home_title')}}</router-link>
-    </section>
+  <div>
+    <h1>Hello!</h1>
   </div>
 </template>
 
@@ -12,17 +8,8 @@
 export default {
   name: 'success',
 
-  metaInfo() {
-    return {
-      title: this.$t('contact.meta_title'),
-      meta: [{
-        vmid: 'description',
-        name: 'description',
-        content: this.$t('contact.meta_desc'),
-      }],
-    };
-  },
 };
+
 </script>
 
 <style scoped>

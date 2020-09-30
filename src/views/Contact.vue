@@ -1,6 +1,5 @@
 <template>
     <section class="container-contact">
-        <!-- <h1>Get In Touch</h1> -->
 
         <div class="col-left">
             <img src="../assets/bg-01.jpg" />
@@ -8,6 +7,7 @@
 
         <div class="col-right">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
+                  <h2>Get In Touch</h2>
                 <label for="name">Your Name</label>
                 <input
                     type="text"
@@ -29,7 +29,8 @@
                 >
 
                 <label for="msg">Your Message</label>
-                <textarea 
+                <input
+                    type="text"
                     name="msg"
                     rows="5"
                     id="msg"
@@ -37,9 +38,8 @@
                     v-model="messageText"
                     class="input"
                 >
-                </textarea>
 
-                <input type="submit" :disabled="!nameText || !emailText || !messageText">
+                <input class="button" type="submit" :disabled="!nameText || !emailText || !messageText">
 
                 <section v-if="loadingMsg">
                     <p class="loading-text">Delivering Your Email...</p>
@@ -96,39 +96,19 @@ html,
 body {
   margin: 0;
   padding: 0;
-}
-
-input,
-textarea {
-    background-color: cream;
-    border-radius: 2px;
-}
-
-input:focus,
-textarea:focus {
-    background-color: cream;
-    border-radius: 2px;
-}
-
-label {
-  display: block;
-  margin: 0;
-}
-
-button {
-    padding: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
     max-width:100%;
-    max-height:100%;
+    height: 500px;
+
 }
 
 div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: red;
     height: 100%;
 }
 
@@ -139,11 +119,74 @@ div {
 .col-left {
     padding: 1rem;
     flex: 1;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .col-right {
     padding: 1rem;
     flex: 1;
+    margin-right: 3rem;
+}
+
+.form {
+    width:340px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:6rem 8rem;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position:relative
+}
+
+h2 {
+    margin:10px 0;
+    padding-bottom:10px;
+    text-align: center;
+    color:#78788c;
+    border-bottom:3px solid #78788c
+}
+
+input {
+    width:100%;
+    padding: 1.2rem;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+input:focus {
+    border-bottom:2px solid #78788c
+}
+
+label:before {
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+.button {
+    width: 50%;
+    padding: 0.5rem;
+    margin: 1.8rem 0 0;
+    border: .15rem solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    background:#78788c;
+    color:#fff
 }
 
 </style>
