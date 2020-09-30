@@ -2,8 +2,8 @@
     <div class="container-contact">
         <h1>Get In Touch</h1>
 
-        <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
-            <div class="contact-form">
+        <div class="col-right">
+            <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
                 <label for="name">Your Name</label>
                 <input
                     type="text"
@@ -37,11 +37,12 @@
                 <section v-if="loadingMsg">
                     <p class="loading-text">Delivering Your Email...</p>
                 </section>
-            </div>
-        </form>
+            </form>
+        </div>
 
-        <section class="image-left">
-		</section>
+         <div class="col-left">
+            <img src="../assets/bg-01.jpg" />
+		</div>
     </div>
 </template>
 
@@ -116,20 +117,20 @@ button {
 
 .container-contact {
     width: 100%;
-    display: flex;
 }
 
-.image-left {
-    background-image: url('../assets/bg-01.jpg');
-    width: calc(100% - 560px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.col-left {
+    height: 100vh;
+    width: 50%;
+    left: 0;
     position: relative;
-    z-index: 1;
-    padding: 30px 15px 0px 15px;
-    display: block;
-    float: left;
+}
+
+.col-right {
+    height: 100vh;
+    width: 50%;
+    left: 50%;
+    position: relative;
 }
 
 </style>

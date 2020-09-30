@@ -16,7 +16,7 @@ import { setTimeout } from 'timers';
       return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['fun', 'awesome', 'a journey', 'life'],
+        typeArray: ['fun', 'innovative', 'a journey', 'life'],
         typingSpeed: 200,
         erasingSpeed: 100,
         newTextDelay: 2000,
