@@ -31,7 +31,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
-  margin-top: 6rem;
+  margin-top: 5rem;
   padding: 0px;
   background-color: #f7f7fc;
 }
@@ -79,6 +79,28 @@ nav {
 
 .nav-link:hover {
   color: #f7f7fc;
+}
+
+@media only screen and (max-width: 768px) {
+    header span, nav, header .logo {
+    display: none;
+}
+
+#app-container {
+  max-height: 100%;
+}
+
+html, body {
+  font-size: 8px;
+}
+
+.mobile-container {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1.1);
+}
+
 }
 
 </style>

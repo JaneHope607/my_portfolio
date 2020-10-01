@@ -1,10 +1,12 @@
 <template>
   <div class="flex-container">
-    <h2>Tech Stack</h2>
+
+     <h3 class="header">Tech Stack</h3>
       <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
         However, despite my preference for Front-End, I am very much open to Back-End related positions as I am always keen to learn and explore different languages.</h3>
-      <div class="skills-block-container">
 
+
+      <div class="skills-block-container">
        <section class="skills-block">
            <img src="../assets/vue.png" alt="laptops"/>
            <h3 class="skills-text">Vue.js</h3>
@@ -83,17 +85,18 @@ export default {
    flex-direction: column;
 }
 
-h2 {
-   margin: 4rem;
+.header {
    text-align: center;
    font-size: 3rem;
    font-weight: normal;
+   padding: 0;
+   margin: 0;
 }
 
 h3 {
-   padding-bottom: 2rem;
    text-align: center;
    font-weight: normal;
+   padding: 1rem;
 }
 
 .skills-block-container {

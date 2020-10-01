@@ -7,37 +7,47 @@
 
         <div class="col-right">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
-                  <h2>Get In Touch</h2>
-                <label for="name">Your Name</label>
+            <h3>Get In Touch</h3>
+                <label for="name">Name</label>
                 <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Enter Your Name..."
+                    placeholder="Enter Your Name"
                     v-model="nameText"
                     class="input"
                 >
 
-                <label for="email">Your Email</label>
+                <label for="email">Email</label>
                 <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Enter Your Email..."
+                    placeholder="Enter Your Email"
                     v-model="emailText"
                     class="input"
                 >
 
-                <label for="msg">Your Message</label>
+                <label for="subject">Subject</label>
                 <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    v-model="subjectText"
+                    class="input"
+                >
+
+                <label for="msg">Message</label>
+                <textarea
                     type="text"
                     name="msg"
                     rows="5"
                     id="msg"
-                    placeholder="Enter Your Message..."
+                    placeholder="Enter Your Message"
                     v-model="messageText"
                     class="input"
-                >
+                ></textarea>
 
                 <input class="button" type="submit" :disabled="!nameText || !emailText || !messageText">
 
@@ -60,6 +70,7 @@ export default {
         nameText: '',
         emailText: '',
         messageText: '',
+        subjectText: '',
         };
     },
 
@@ -72,11 +83,13 @@ export default {
                 name: this.nameText,          
                 email: this.emailText,          
                 message: this.messageText,
+                subject: this.subjectText
             })
             .then((response) => {
                 this.nameText = '';
                 this.emailText = '';
                 this.messageText = '';
+                this.subjectText  = '';
                 this.loadingMsg = false;  
                 this.$router.push({ path: '/success' });
             }).catch((error) => {        
@@ -92,17 +105,10 @@ export default {
 
 <style scoped>
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
 img {
-    max-width:100%;
-    height: 500px;
-
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
 }
 
 div {
@@ -117,16 +123,15 @@ div {
 }
 
 .col-left {
-    padding: 1rem;
     flex: 1;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0 2rem;
+      height: 100%;
 }
 
 .col-right {
-    padding: 1rem;
+    margin: 0 2rem 0 0;
     flex: 1;
-    margin-right: 3rem;
+    height: 100%;
 }
 
 .form {
@@ -138,29 +143,36 @@ div {
     padding:6rem 8rem;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
-    position:relative
+    text-align: center;
+    height: 100%;
 }
 
-h2 {
-    margin:10px 0;
+h3 {
     padding-bottom:10px;
     text-align: center;
-    color:#78788c;
-    border-bottom:3px solid #78788c
+    font-weight: normal;
+    font-size: 3rem;
+    top: 0;
 }
 
-input {
+input, textarea {
     width:100%;
-    padding: 1.2rem;
+    padding: 1.8rem;
     box-sizing:border-box;
     background:none;
     outline:none;
     border:0;
     transition:all .3s;
-    border-bottom:2px solid #bebed2
+    border-bottom:2px solid #bebed2;
+    font-family: 'Montserrat', sans-serif;
+    resize: none;
 }
 
 input:focus {
+    border-bottom:2px solid #78788c
+}
+
+textarea:focus {
     border-bottom:2px solid #78788c
 }
 
@@ -169,7 +181,7 @@ label:before {
     display:block;
     margin:28px 0 0;
     font-size:14px;
-    color:#5a5a5a
+    color:#5a5a5a;
 }
 
 .button {
@@ -182,6 +194,9 @@ label:before {
     cursor:pointer;
     transition:all .3s;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
 }
 
 .button:hover {
