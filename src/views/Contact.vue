@@ -219,6 +219,9 @@ form {
     margin: 0 2rem 0 2rem;
 }
 
+h3 {
+    font-size: 4rem;
+}
 }
 
 </style>
