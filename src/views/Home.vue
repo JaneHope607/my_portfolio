@@ -11,7 +11,7 @@ import Typewriter from '../components/Typewriter.vue';
 import ImageAbout from '../components/ImageAbout.vue';
 
 export default {
-  name: 'Home',
+  name: 'home',
   components: {
     Typewriter,
     ImageAbout

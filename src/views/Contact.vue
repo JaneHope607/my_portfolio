@@ -2,7 +2,7 @@
     <section class="container-contact">
 
         <div class="col-left">
-            <img src="../assets/bg-01.jpg" />
+            <img src="../assets/contact.jpg" />
 		</div>
 
         <div class="col-right">

@@ -2,6 +2,7 @@
 <template>
     <div class="image-about">
         <img src='../assets/jane.png' alt="profile-image"/>
+        <p> I'm a web developer based in Edinburgh, Scotland. I have a passion for web design!</p>
     </div>
 </template>
 
