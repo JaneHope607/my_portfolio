@@ -27,11 +27,11 @@ export default {
   box-sizing: border-box
 }
 
-html, body {
+html {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding: 0px;
   background-color: #f7f7fc;
 }

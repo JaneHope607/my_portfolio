@@ -109,6 +109,7 @@ img {
     width: 100%;
     height: 100%;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 div {
@@ -125,7 +126,7 @@ div {
 .col-left {
     flex: 1;
     margin: 0 2rem;
-      height: 100%;
+    height: 100%;
 }
 
 .col-right {
@@ -184,6 +185,10 @@ label:before {
     color:#5a5a5a;
 }
 
+label {
+    font-size: 20px;
+}
+
 .button {
     width: 50%;
     padding: 0.5rem;
@@ -196,12 +201,24 @@ label:before {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: block;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 
 .button:hover {
     background:#78788c;
     color:#fff
+}
+
+@media only screen and (max-width: 768px) {
+
+.col-left {
+    display: none;
+}
+
+form {
+    margin: 0 2rem 0 2rem;
+}
+
 }
 
 </style>
