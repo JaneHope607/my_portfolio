@@ -7,64 +7,89 @@
 
 
       <div class="skills-block-container">
-       <section class="skills-block">
-           <img src="../assets/vue.png" alt="laptops"/>
-           <h3 class="skills-text">Vue.js</h3>
+      <section class="skills-block">
+         <img src="../assets/vue.png" alt="vue logo"/>
+         <div class="skill-text">
+            <h4>Vue.js</h4>
+         </div>
        </section>  
 
-       <section class="skills-block">
-          <img src="../assets/react.png" alt="mobile phone"/>
-          <h3 class="skills-text">React.js</h3>
+      <section class="skills-block">
+         <img src="../assets/react.png" alt="react logo"/>
+         <div class="skill-text">
+            <h4>React.js</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/github.png" alt="man with camera"/>
-          <h3 class="skills-text">GitHub</h3>
+         <img src="../assets/github.png" alt="github logo"/>
+         <div class="skill-text">
+            <h4>GitHub</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/node.png" alt="computer with stats"/>
-          <h3 class="skills-text">Node.js</h3>
+         <img src="../assets/node.png" alt="node.js logo"/>
+         <div class="skill-text">
+            <h4>Node.js</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/mongodb.png" alt="chess pieces"/>
-          <h3 class="skills-text">MongoDB</h3>
+         <img src="../assets/mongodb.png" alt="mongodb logo"/>
+         <div class="skill-text">
+            <h4>MongoDB</h4>
+         </div>
+       </section>
+
+
+       <section class="skills-block">
+         <img src="../assets/spring.png" alt="spring logo"/>
+         <div class="skill-text">
+            <h4>Spring</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/express.png" alt="smart watch"/>
-          <h3 class="skills-text">Express.js</h3>
+         <img src="../assets/es6.png" alt="java script es6 logo"/>
+         <div class="skill-text">
+            <h4>JS ES6</h4>
+            </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/es6.png" alt="smart watch"/>
-          <h3 class="skills-text">JS ES6</h3>
+         <img src="../assets/js.png" alt="java script logo"/>
+         <div class="skill-text">
+            <h4>JavaScript</h4>
+         </div>
+       </section>
+
+      <section class="skills-block">
+         <img src="../assets/express.png" alt="express.js logo"/>
+         <div class="skill-text">
+            <h4>Express.js</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/js.png" alt="smart watch"/>
-          <h3 class="skills-text">JavaScript</h3>
+         <img src="../assets/css3.png" alt="css3 logo"/>
+         <div class="skill-text">
+            <h4>CSS3</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/css3.png" alt="smart watch"/>
-          <h3 class="skills-text">CSS3</h3>
+         <img src="../assets/html5.png" alt="html5 logo"/>
+         <div class="skill-text">
+            <h4>HTML5</h4>
+         </div>
        </section>
 
        <section class="skills-block">
-          <img src="../assets/html5.png" alt="smart watch"/>
-          <h3 class="skills-text">HTML5</h3>
-       </section>
-
-       <section class="skills-block">
-          <img src="../assets/logo.png" alt="smart watch"/>
-          <h3 class="skills-text">PostgreSQL</h3>
-       </section>
-
-       <section class="skills-block">
-          <img src="../assets/logo.png" alt="smart watch"/>
-          <h3 class="skills-text">Spring</h3>
+         <img src="../assets/postgresql.png" alt="posgresql logo"/>
+         <div class="skill-text">
+            <h4>PostgreSQL</h4>
+         </div>
        </section>
     </div>
 </div>
@@ -96,7 +121,7 @@ export default {
 h3 {
    text-align: center;
    font-weight: normal;
-   padding: 1rem;
+   padding-bottom: 1rem;
 }
 
 .skills-block-container {
@@ -128,9 +153,21 @@ img {
    height: auto;
 }
 
-.skills-text {
+.skill-text {
    text-align: center;
-   margin-bottom: 1.5rem;
+   font-weight: normal;
+   padding: 0 0;
+   max-width: 100%;
+   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+.skills-block-container {
+    grid-template-columns: repeat(3,1fr);
+    display: column;
+}
+
 }
 
 </style>

@@ -31,7 +31,7 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 0px;
   background-color: #f7f7fc;
 }
