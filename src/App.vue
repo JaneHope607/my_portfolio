@@ -10,13 +10,19 @@
       </nav>
     </header>
     <router-view/>
+  <Footer/>
   </div>
 </template>
 
 <script>
 
+import Footer from './components/Footer.vue';
+
 export default {
   name: "App",
+  components: {
+    Footer
+  }
 
 }
 </script>
@@ -31,7 +37,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
-  margin-top: 6rem;
+  margin-top: 7rem;
   padding: 0px;
   background-color: #f7f7fc;
 }
@@ -82,7 +88,12 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-    header span, nav, header .logo {
+
+html {
+  margin-top: 3.5rem;
+  }
+
+.logo {
     display: none;
 }
 

@@ -126,7 +126,7 @@ h3 {
 
 .skills-block-container {
    display: grid;
-   grid-template-columns: repeat(6,1fr);
+   grid-template-columns: repeat(5,1fr);
    gap: 2rem 2rem;
    max-width: 100%;
    margin-left: 4.5rem;
