@@ -1,16 +1,16 @@
 <template>
   <div id="app-container">
-    <header class="nav-container">
-      <img class="logo" src="./assets/logo.png" alt="logo">
-      <nav>
-        <router-link to="/" class="nav-link">Home</router-link>
-        <router-link to="/projects" class="nav-link">Projects</router-link>
-        <router-link to="/skills" class="nav-link">Skills</router-link>
-        <router-link to="/contact" class="nav-link">Contact</router-link>
-      </nav>
-    </header>
-    <router-view/>
-  <Footer/>
+      <header class="nav-container">
+        <img class="logo" src="./assets/logo.png" alt="logo">
+        <nav>
+          <router-link to="/" class="nav-link">Home</router-link>
+          <router-link to="/projects" class="nav-link">Projects</router-link>
+          <router-link to="/skills" class="nav-link">Skills</router-link>
+          <router-link to="/contact" class="nav-link">Contact</router-link>
+        </nav>
+      </header>
+      <router-view></router-view>
+    <Footer/>
   </div>
 </template>
 
@@ -27,24 +27,30 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 
 * {
   box-sizing: border-box
 }
 
-html {
+html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #4d4d4d;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+}
+
+body {
   margin-top: 7rem;
-  padding: 0px;
-  background-color: #f7f7fc;
 }
 
 #app-container {
-  max-height: 100%;
-  max-width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 6rem
 }
 
 .nav-container {
@@ -56,7 +62,7 @@ html {
   width: 100%;
   z-index: 5;
   align-self: center;
-  background-color: rgb(214, 179, 22);
+  background-color: rgb(255, 217, 45);
   margin: 0;
 }
 

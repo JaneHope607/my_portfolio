@@ -71,7 +71,7 @@ import { setTimeout } from 'timers';
   }
   
   span {
-        color: rgb(214, 179, 22);
+        color: rgb(255, 217, 45);
     }
 
   h1 {
@@ -79,7 +79,7 @@ import { setTimeout } from 'timers';
     font-weight: normal;
 
     span.typed-text {
-      color: rgb(214, 179, 22);
+      color: rgb(255, 217, 45);
     }
 
     span.cursor {
