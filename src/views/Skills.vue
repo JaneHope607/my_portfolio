@@ -198,10 +198,19 @@ img {
    height: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
 
 .skills-block-container {
     grid-template-columns: repeat(3,1fr);
+    display: column;
+}
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+
+.skills-block-container {
+    grid-template-columns: repeat(4,1fr);
     display: column;
 }
 
