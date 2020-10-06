@@ -1,54 +1,17 @@
 <template>
   <div class="flex-container">
-
-     <h3 class="header">Tech Stack</h3>
-      <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
+     
+   <h3 class="header">Languages And Technologies</h3>
+   <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
         However, despite my preference for Front-End, I am very much open to Back-End related positions as I am always keen to learn and explore different languages.</h3>
 
-
-      <div class="skills-block-container">
+   <div class="skills-block-container">      
       <section class="skills-block">
-         <img src="../assets/vue.png" alt="vue logo"/>
+         <img src="../assets/java-logo.png" alt="java logo"/>
          <div class="skill-text">
-            <h4>Vue.js</h4>
+            <h4>Java</h4>
          </div>
-       </section>  
-
-      <section class="skills-block">
-         <img src="../assets/react.png" alt="react logo"/>
-         <div class="skill-text">
-            <h4>React.js</h4>
-         </div>
-       </section>
-
-       <section class="skills-block">
-         <img src="../assets/github.png" alt="github logo"/>
-         <div class="skill-text">
-            <h4>GitHub</h4>
-         </div>
-       </section>
-
-       <section class="skills-block">
-         <img src="../assets/node.png" alt="node.js logo"/>
-         <div class="skill-text">
-            <h4>Node.js</h4>
-         </div>
-       </section>
-
-       <section class="skills-block">
-         <img src="../assets/mongodb.png" alt="mongodb logo"/>
-         <div class="skill-text">
-            <h4>MongoDB</h4>
-         </div>
-       </section>
-
-
-       <section class="skills-block">
-         <img src="../assets/spring.png" alt="spring logo"/>
-         <div class="skill-text">
-            <h4>Spring</h4>
-         </div>
-       </section>
+      </section>
 
        <section class="skills-block">
          <img src="../assets/es6.png" alt="java script es6 logo"/>
@@ -64,10 +27,10 @@
          </div>
        </section>
 
-      <section class="skills-block">
-         <img src="../assets/express.png" alt="express.js logo"/>
+       <section class="skills-block">
+         <img src="../assets/ruby.png" alt="ruby logo"/>
          <div class="skill-text">
-            <h4>Express.js</h4>
+            <h4>Ruby</h4>
          </div>
        </section>
 
@@ -86,12 +49,69 @@
        </section>
 
        <section class="skills-block">
+         <img src="../assets/spring.png" alt="spring logo"/>
+         <div class="skill-text">
+            <h4>Spring</h4>
+         </div>
+       </section>
+
+      <section class="skills-block">
+         <img src="../assets/vue.png" alt="vue logo"/>
+         <div class="skill-text">
+            <h4>Vue.js</h4>
+         </div>
+       </section>  
+
+      <section class="skills-block">
+         <img src="../assets/react.png" alt="react logo"/>
+         <div class="skill-text">
+            <h4>React.js</h4>
+         </div>
+       </section>
+
+      <section class="skills-block">
+         <img src="../assets/express.png" alt="express.js logo"/>
+         <div class="skill-text">
+            <h4>Express.js</h4>
+         </div>
+       </section>
+
+      <section class="skills-block">
+         <img src="../assets/node.png" alt="node.js logo"/>
+         <div class="skill-text">
+            <h4>Node.js</h4>
+         </div>
+       </section>
+
+       <section class="skills-block">
+         <img src="../assets/mongodb.png" alt="mongodb logo"/>
+         <div class="skill-text">
+            <h4>MongoDB</h4>
+         </div>
+       </section>
+
+       <section class="skills-block">
          <img src="../assets/postgresql.png" alt="posgresql logo"/>
          <div class="skill-text">
             <h4>PostgreSQL</h4>
          </div>
        </section>
-    </div>
+
+       <section class="skills-block">
+         <img src="../assets/github.png" alt="github logo"/>
+         <div class="skill-text">
+            <h4>GitHub</h4>
+         </div>
+       </section>
+
+      <section class="skills-block">
+         <img src="../assets/vsc.png" alt="visual studio code logo"/>
+         <div class="skill-text">
+            <h4>Visual Studio Code</h4>
+         </div>
+       </section>
+
+   </div>
 </div>
 
 </template>
