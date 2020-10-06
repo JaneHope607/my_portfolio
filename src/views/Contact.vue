@@ -1,5 +1,5 @@
 <template>
-    <section class="container-contact">
+    <section id="container-contact">
 
         <div class="contact-div">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
@@ -101,29 +101,19 @@ export default {
 
 <style scoped>
 
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+#container-contact {
+    width: 100%;
+	height: 100%;
+    margin: 5rem;
 }
 
-.container-contact {
-   display: flex;
-}
-
-.contact-div {
-    margin: 0 2rem 0 0;
-    flex: 1;
-    height: 100%;
-}
 
 .form {
     width:340px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
-    margin:calc(50vh - 220px) auto;
+    margin: 0 auto;
     padding:6rem 8rem;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
@@ -140,14 +130,13 @@ h3 {
 }
 
 input, textarea {
-    width:100%;
+    width:60%;
     padding: 1.8rem;
     box-sizing:border-box;
-    background:none;
+    background: rgb(219, 219, 219);
     outline:none;
     border:0;
     transition:all .3s;
-    border-bottom:2px solid #bebed2;
     font-family: 'Montserrat', sans-serif;
     resize: none;
 }
@@ -170,6 +159,7 @@ label:before {
 
 label {
     font-size: 20px;
+    display: none;
 }
 
 .button {
