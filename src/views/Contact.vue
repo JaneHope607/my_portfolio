@@ -1,11 +1,7 @@
 <template>
     <section class="container-contact">
 
-        <div class="col-left">
-            <img src="../assets/contact.jpg" />
-		</div>
-
-        <div class="col-right">
+        <div class="contact-div">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
             <h3>Get In Touch</h3>
                 <label for="name">Name</label>
@@ -105,13 +101,6 @@ export default {
 
 <style scoped>
 
-img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
 div {
     display: flex;
     flex-direction: column;
@@ -123,13 +112,7 @@ div {
    display: flex;
 }
 
-.col-left {
-    flex: 1;
-    margin: 0 2rem;
-    height: 100%;
-}
-
-.col-right {
+.contact-div {
     margin: 0 2rem 0 0;
     flex: 1;
     height: 100%;

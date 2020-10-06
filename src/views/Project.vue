@@ -6,7 +6,7 @@
 
     <div class="projects-block-container">      
         <h4>Total Fitness Gym App</h4>
-        <img src="../assets/gym-app-screenshot.png" alt="ruby project image"/>
+          <!-- <img class="media-object" src="../assets/gym-app-screenshot.png" alt="ruby project image"/> -->
     </div>
      
   </div>
@@ -34,8 +34,12 @@
 }
 
 .projects-container {
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 0 0 250px;
+  height: 100%;
 }
 
 .projects-block-container {
@@ -43,11 +47,6 @@
   text-align: center;
   box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
   background-color: red;
-}
-
-img {
-  height: 600px;
-  width: 1200px;
 }
 
 </style>
