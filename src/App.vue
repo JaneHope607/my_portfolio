@@ -4,7 +4,7 @@
         <img class="logo" src="./assets/logo.png" alt="logo">
         <nav>
           <router-link to="/" class="nav-link">Home</router-link>
-          <router-link to="/projects" class="nav-link">Projects</router-link>
+          <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
           <router-link to="/skills" class="nav-link">Skills</router-link>
           <router-link to="/contact" class="nav-link">Contact</router-link>
         </nav>
