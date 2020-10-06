@@ -1,8 +1,10 @@
 <template>
   <div class="flex-container">
      
-   <h3 class="header">Languages And Technologies</h3>
-   <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
+    <div class="title-div">
+      <h2 class="title">LANGUAGES AND TECHNOLOGIES</h2>
+    </div>
+      <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
         However, despite my preference for Front-End, I am very much open to Back-End related positions as I am always keen to learn and explore different languages.</h3>
 
    <div class="skills-block-container">      
@@ -130,12 +132,27 @@ export default {
    flex-direction: column;
 }
 
-.header {
+/* .header {
    text-align: center;
    font-size: 3rem;
    font-weight: normal;
    padding: 0;
    margin: 0;
+} */
+
+.title-div {
+  background-color: black;
+  font-weight: normal;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  padding: 0.5rem;
 }
 
 h3 {

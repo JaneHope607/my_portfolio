@@ -1,13 +1,22 @@
 <template>
   <div id="projects">
     <div class="title-div">
-      <h1 class="title">PROJECTS</h1>
+      <h2 class="title">PROJECTS</h2>
     </div>
-    <p>
-      I'm a web developer based in Edinburgh, Scotland. I have a passion for web design!
-    </p>
+
+    <div class="projects-block-container">      
+      <section class="projects-block">
+        <h4>Total Fitness Gym App</h4>
+        <img src="../assets/gym-app-screenshot.png" alt="ruby project image"/>
+      </section>
+    </div>
+     
   </div>
 </template>
+
+<script>
+
+</script>
 
 <style scoped>
 
@@ -25,5 +34,7 @@
   font-weight: normal;
   padding: 1rem;
 }
+
+
 
 </style>
