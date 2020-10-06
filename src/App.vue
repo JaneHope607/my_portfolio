@@ -64,6 +64,7 @@ body {
   align-self: center;
   background-color: rgb(255, 217, 45);
   margin: 0;
+  box-shadow: 5px 5px 15px hsla(210, 9%, 82%, 0.73);
 }
 
 header .logo {
