@@ -128,7 +128,9 @@ export default {
 
 h4 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-decoration: underline;
 }
 
 .codeclan-logo {

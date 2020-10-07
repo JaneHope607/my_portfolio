@@ -142,7 +142,7 @@ export default {
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   line-height: 1;
 }
 
@@ -151,7 +151,6 @@ export default {
   text-align: center;
   font-weight:lighter;
   letter-spacing: 6px;
-  padding-left: 0.2rem;
 }
 
 h3 {
