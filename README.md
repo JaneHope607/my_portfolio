@@ -1,6 +1,6 @@
 # my_portfolio
 
-See portfolio (here)[https://janecodes.com]
+See portfolio [here[(https://janecodes.com)
 
 ## Project setup
 ```
