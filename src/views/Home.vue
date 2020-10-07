@@ -20,7 +20,7 @@
     </div>
     <div class="resume">
       <div class="link-cv">
-        <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">
+        <a :href="`${publicPath}jane-odonnell-cv.pdf`" download="jane-odonnell-cv">
           <img class="download-icon" src="../assets/download-button.png" alt="download logo"/>
           <h4 class="text-cv">JANE O'DONNEL CV SOFTWARE DEVLOPER PDF</h4>
         </a>
