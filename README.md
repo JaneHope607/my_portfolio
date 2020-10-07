@@ -1,5 +1,7 @@
 # my_portfolio
 
+see portfolio [here]('https://janecodes.com')
+
 ## Project setup
 ```
 npm install
