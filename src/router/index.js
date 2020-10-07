@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import Skills from '../views/Skills.vue'
-import Success from '../views/Success.vue'
 
 const routes = [
   {
@@ -31,11 +30,6 @@ const routes = [
     component: Contact,
     meta: { title: 'Contact' }
 
-  },
-  {
-    path: '/success',
-    name: 'success',
-    component: Success
   },
 ]
 
