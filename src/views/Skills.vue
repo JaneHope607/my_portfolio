@@ -148,16 +148,18 @@ export default {
 .title-div {
   background-color: black;
   font-weight: normal;
-  width: 50%;
   text-align: center;
   margin: 0 auto;
+  display: inline-block;
+  line-height: 1;
 }
 
 .title {
   color: white;
   text-align: center;
-  font-weight: normal;
-  padding: 0.5rem;
+  font-weight:lighter;
+  letter-spacing: 6px;
+  padding-left: 0.2rem;
 }
 
 h3 {

@@ -3,7 +3,7 @@
     <ImageAbout class="image-about"/>
     <Typewriter class="typewriter"/>
     <div class="title-div">
-      <h2 class="title">SOFTWARE DEVELOPMENT EXPERIENCE</h2>
+      <h2 class="title">ABOUT ME</h2>
     </div>
     <div class="experience-div">
       <div class="codeclan-image">
@@ -17,6 +17,9 @@
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
           </p>
       </div>
+    </div>
+    <div class="title-div">
+      <h2 class="title">RESUME</h2>
     </div>
   </div>
 </template>
@@ -45,32 +48,37 @@ export default {
 .title-div {
   background-color: black;
   font-weight: normal;
-  width: 50%;
   text-align: center;
   margin: 0 auto;
+  display: block;
+  line-height: 1;
+  width: 30%;
 }
 
 .title {
   color: white;
   text-align: center;
-  font-weight: normal;
+  font-weight:lighter;
+  letter-spacing: 6px;
   padding: 0.5rem;
 }
 
 .experience-div {
   background-color: rgb(255, 217, 45);
   display: flex;
-  width: 100%;padding: 2rem;
+  width: 100%;
+  margin: 2rem;
 }
 
 .codeclan-text {
-  width: 40%;
   height: auto;
+  text-align: justify;
 }
 
 img {
-  height: 60%;
+  height: 70%;
   width: auto;
+  margin: 0 auto;
 }
 
 </style>
