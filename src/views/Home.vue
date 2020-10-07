@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div id="home">
      <ImageAbout class="image-about"/>
      <Typewriter class="typewriter"/>
   </div>
@@ -21,5 +21,9 @@ export default {
 </script>
 
 <style scoped>
+
+#home {
+  max-width: 100%;
+}
 
 </style>

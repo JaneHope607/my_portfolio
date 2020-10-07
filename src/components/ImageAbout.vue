@@ -15,15 +15,20 @@
 
 .image-about {
     display: flex;
+    width: 100%;
 }
 
 .profile-image {
-    display: flex;
+    width: 50%;
 }
 
 .profile-photo {
-    width: 50%;
+    max-width: 100%;
     height: auto;
+}
+
+.title {
+    /* max-width: 50%; */
 }
 
 span {

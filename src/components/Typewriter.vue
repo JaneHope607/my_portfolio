@@ -15,7 +15,7 @@ import { setTimeout } from 'timers';
       return {
         typeValue: '',
         typeStatus: false,
-        typeArray: ['fun', 'innovative', 'a journey', 'life'],
+        typeArray: ['inspiring', 'innovative', 'a journey', 'life'],
         typingSpeed: 200,
         erasingSpeed: 100,
         newTextDelay: 2000,
@@ -67,6 +67,7 @@ import { setTimeout } from 'timers';
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 100%;
   }
 
   h1 {
