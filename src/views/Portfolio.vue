@@ -81,6 +81,12 @@
 h4, p {
   text-align: center;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 </style>

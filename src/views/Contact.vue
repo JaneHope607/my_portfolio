@@ -1,7 +1,11 @@
 <template>
-    <section id="container-contact">
+    <section class="container-contact">
 
-        <div class="contact-div">
+        <div class="col-left">
+            <img src="../assets/contact.jpg" />
+		</div>
+
+        <div class="col-right">
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
             <h3>Get In Touch</h3>
                 <label for="name">Name</label>
@@ -101,19 +105,41 @@ export default {
 
 <style scoped>
 
-#container-contact {
+img {
     width: 100%;
-	height: 100%;
-    margin: 5rem;
+    height: 100%;
+    margin-bottom: 2rem;
 }
 
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.container-contact {
+   display: flex;
+}
+
+.col-left {
+    flex: 1;
+    margin: 0 2rem;
+    height: 100%;
+}
+
+.col-right {
+    margin: 0 2rem 0 0;
+    flex: 1;
+    height: 100%;
+}
 
 .form {
     width:340px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
-    margin: 0 auto;
+    margin:calc(50vh - 220px) auto;
     padding:6rem 8rem;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
@@ -130,13 +156,14 @@ h3 {
 }
 
 input, textarea {
-    width:60%;
+    width:100%;
     padding: 1.8rem;
     box-sizing:border-box;
-    background: rgb(219, 219, 219);
+    background:none;
     outline:none;
     border:0;
     transition:all .3s;
+    border-bottom:2px solid #bebed2;
     font-family: 'Montserrat', sans-serif;
     resize: none;
 }
@@ -159,7 +186,6 @@ label:before {
 
 label {
     font-size: 20px;
-    display: none;
 }
 
 .button {
@@ -174,7 +200,7 @@ label {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     display: block;
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 .button:hover {
@@ -189,12 +215,9 @@ label {
 }
 
 form {
-    margin: 0 2rem 0 2rem;
+    margin: 0 2rem;
 }
 
-h3 {
-    font-size: 4rem;
-}
 }
 
 </style>
