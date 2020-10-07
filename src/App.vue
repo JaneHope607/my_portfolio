@@ -1,7 +1,7 @@
 <template>
   <div id="app-container">
       <header class="nav-container">
-        <img class="logo" src="./assets/logo.png" alt="logo">
+        <img class="logo" src="./assets/logo.png" alt="logo" a href="/">
         <nav>
           <router-link to="/" class="nav-link">Home</router-link>
           <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
@@ -97,8 +97,8 @@ nav {
 @media only screen and (max-width: 768px) {
 
 html {
-  margin-top: 3.5rem;
-  }
+  margin-top: 1rem;
+}
 
 .logo {
     display: none;

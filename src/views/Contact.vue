@@ -6,8 +6,10 @@
 		</div>
 
         <div class="col-right">
+            <div class="title-div">
+                <h2 class="title">GET IN TOUCH</h2>
+            </div>
             <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
-            <h3>Get In Touch</h3>
                 <label for="name">Name</label>
                 <input
                     type="text"
@@ -95,7 +97,7 @@ export default {
                 this.messageText = '';
                 this.subjectText  = '';
                 this.loadingMsg = false;  
-                this.$router.push({ path: '/success' });
+                this.$router.push({ path: '/contact' });
             }).catch((error) => {        
                 if (error.response) {
                     alert(error.response.data);
@@ -138,13 +140,31 @@ div {
     height: 100%;
 }
 
+.title-div {
+  background-color: black;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-weight:lighter;
+  letter-spacing: 6px;
+  padding-left: 0.2rem;
+}
+
 .form {
     width:340px;
     background:#e6e6e6;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
     margin:calc(50vh - 220px) auto;
-    padding:6rem 8rem;
+    padding: 6rem 8rem;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
     text-align: center;

@@ -184,7 +184,7 @@ h3 {
    background-color: white;
    text-align: center;
    box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
-   transition: all 500ms ease-in-out;
+   transition: all 200ms ease-in-out;
 }
 
 .skills-block:hover {

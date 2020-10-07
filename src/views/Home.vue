@@ -12,8 +12,8 @@
       <div class="codeclan text">
         <h4>CodeClan</h4>
           <p>
-            My journey into coding began at CodeClan on May the Fourth 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
-            This consisted of over 800 hours of instructor led tutoring and guidance. I have built up exctensive knowledge of several new languages, working methodologies and technologies.
+            My journey into coding began at CodeClan on June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
+            This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
           </p>
       </div>
@@ -64,9 +64,8 @@ export default {
 }
 
 .experience-div {
-  background-color: rgb(255, 217, 45);
-  display: flex;
-  width: 100%;
+  background-color: rgb(4, 48, 88);
+  max-width: 100%;
   margin: 2rem;
 }
 
@@ -75,10 +74,15 @@ export default {
   text-align: justify;
 }
 
+h4, p {
+   color: white;
+}
+
 img {
-  height: 70%;
-  width: auto;
+  width: 50%;
+  height: auto;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 </style>
