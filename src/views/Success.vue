@@ -8,6 +8,9 @@
 export default {
   name: 'success',
 
+  mounted() {
+    window.scrollTo(0, 0)
+  }
 };
 
 </script>

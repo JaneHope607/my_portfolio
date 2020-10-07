@@ -44,6 +44,14 @@
 
 <script>
 
+export default {
+  name: 'portfolio',
+
+  mounted() {
+    window.scrollTo(0, 0)
+  }
+};
+
 </script>
 
 <style scoped>

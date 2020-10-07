@@ -40,14 +40,14 @@
 
                 <label for="msg">Message</label>
                 <textarea
-                    type="text"
                     name="msg"
                     rows="5"
                     id="msg"
                     placeholder="Enter Your Message"
                     v-model="messageText"
                     class="input"
-                ></textarea>
+                >
+                </textarea>
 
                 <input class="button" type="submit" :disabled="!nameText || !emailText || !messageText">
 
@@ -72,6 +72,10 @@ export default {
         messageText: '',
         subjectText: '',
         };
+    },
+
+    mounted() {
+        window.scrollTo(0, 0)
     },
 
     methods: {

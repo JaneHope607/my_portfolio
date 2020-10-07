@@ -6,8 +6,6 @@
         <div class="title">
             <h2>Developer<span>.</span><br>Designer<span>.</span></h2>
         </div>
-        <!-- <p> I'm a web developer based in Edinburgh, Scotland. I have a passion for web design!</p>
-        <img src="../assets/codeclan.png" alt="codeclan logo"/> -->
     </div>
 </template>
 
@@ -20,6 +18,8 @@
 
 .profile-image {
     width: 50%;
+    margin: 2rem 2rem 0 2rem;
+    padding: 0;
 }
 
 .profile-photo {
@@ -27,17 +27,19 @@
     height: auto;
 }
 
-.title {
-    /* max-width: 50%; */
-}
-
 span {
     color: rgb(255, 217, 45);
+}
+
+.title {
+    margin: 2rem 2rem 0 2rem;
+    padding: 0;
 }
 
 h2 {
     font-size: 6rem;
     font-weight: normal;
+    vertical-align:middle;
 }
 
 </style>
