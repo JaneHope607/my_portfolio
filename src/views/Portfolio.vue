@@ -159,10 +159,17 @@ h4 {
 }
 
 .link-project {
+  display: block;
   position: absolute; 
-  bottom: 0.5rem;
-  display: flex;
-  margin: 0 auto;
+  bottom: 2rem;
+  width: 100%;
+}
+
+.link-project a {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
 }
 
 </style>
