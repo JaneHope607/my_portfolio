@@ -179,4 +179,15 @@ h4 {
   float: left;
 }
 
+@media only screen and (max-width: 768) {
+  
+  .experience-div {
+    display: block;
+  }
+
+p {
+  padding: 1rem;
+}
+}
+
 </style>

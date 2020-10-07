@@ -103,6 +103,13 @@ h2 {
   font-size: 5rem;
   font-weight: normal;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  h1 {
+    font-size: 4rem;
   }
+}
 
 </style>
