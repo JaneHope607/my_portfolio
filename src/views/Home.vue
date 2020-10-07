@@ -7,7 +7,7 @@
     </div>
     <div class="experience-div">
       <div class="codeclan">
-        <img src="../assets/codeclan.png" alt="codeclan logo"/>
+        <img class="codeclan-logo" src="../assets/codeclan.png" alt="codeclan logo"/>
       </div>
       <div class="codeclan">
         <h4>CodeClan</h4>
@@ -20,6 +20,7 @@
     </div>
     <div class="resume">
       <div class="link-cv">
+        <!-- <img class="download-icon" src="../assets/download.jpg" alt="download logo"/> -->
         <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">Jane O'Donnell Curriculum Vitae Software Developer (pdf)</a>
       </div>
     </div>
@@ -92,6 +93,7 @@ p {
   font-weight: lighter;
   padding-bottom: 1rem;
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 h4 {
@@ -99,7 +101,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-img {
+.codeclan-logo {
   height: auto;
   width: 100%;
   margin: 0 auto;
@@ -112,11 +114,22 @@ img {
 
 .link-cv {
   width: 80%;
-  background-color: yellow;
+  background-color: rgb(42, 74, 104);
+  height: 50%;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+.download-icon {
+  float: left;
 }
 
 </style>
