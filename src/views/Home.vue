@@ -11,10 +11,10 @@
       <div class="codeclan">
         <h4>About Me</h4>
           <p class="about-me">
-            My name is Jane O'Donnell, and I'm an Edinburgh born and based Software Developer. I have a passion for creativity. programming and problem solving.
-            In my spare time, I love to play guitar and listen to music. 
-            This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
-            These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
+            My name is Jane O'Donnell, and I'm an Edinburgh born and based Software Developer. I am passionate about design, programming and problem solving.
+            I love to take on new challanges, and after graduating from Edinburgh univeristy, I moved to London to pursue a career with a digital marketing startup company.
+            I thrived in the fast-paced and dynamic environemnt there. Creativity is extremely important to me in my work, and I love experimenting with new ideas.
+            My spare time is taken up with long walks in my beautiful city and spending time with family and friends. Aside from this I'm interested in fashion and history.
           </p>
       </div>
 
@@ -32,7 +32,8 @@
       <div class="codeclan">
         <h4>CodeClan</h4>
           <p class="about-me">
-            At the beginning of 2020, I decided to move from London back to Edinburgh and pursue a career in Software Development. As the world was turned on its head, I found myself with a great opportunity to 
+            At the beginning of 2020, I decided to move from London back to Edinburgh and pursue a career in Software Development.
+            As the world was turned on its head, I found myself with a great opportunity to 
             properly start my journey into coding by enrolling into CodeClan in June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
             This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
@@ -156,7 +157,7 @@ h4 {
   float: left;
   margin: 0 auto;
   height: 100%;
-  width: 8.5%;
+  width: auto;
   background-color: rgb(107, 135, 161);
 }
 

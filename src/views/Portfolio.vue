@@ -1,45 +1,48 @@
 <template>
-  <div id="projects-container">
+  <section>
     
-    <!-- <div class="title-div">
+    <div class="title-div">
       <h2 class="title">PORTFOLIO</h2>
-    </div> -->
-
-    <div class="projects-block-container image">     
-      <img class="media-object" src="../assets/solar-system.png" alt="solar system project image"/>
     </div>
+
+    <div class="projects-container">  
+      <div class="projects-block-container">     
+        <img class="media-object" src="../assets/solar-system.png" alt="solar system project image"/>
+      </div>
     
-    <div class="project-block-container text">
-      <h4 class="project-heading">Solar System App</h4>
-        <p>
-          A Web Application built with React and Contentful and Tailwind CSS. Admin can list properties and user can filter properties based on bedrooms, price etc.
-        </p>
-    </div>
+      <div class="project-block-container">
+        <h4 class="project-heading">Solar System App</h4>
+          <p>
+            An interactive online browser application for the BBC targeted towards children. This app displays information on the planets in our solar system in a fun and interactive manner, with the information obtained from an external API.
+            It also hosts a quiz with a leaderboard and scores. Utilised Vue.js, Express, MongoDB, HTML and CSS.
+          </p>
+      </div>
 
-    <div class="project-block-container">
-      <h4>Total Fitness Gym App</h4>
-        <p>
-          A Web Application built with React and Contentful and Tailwind CSS. Admin can list properties and user can filter properties based on bedrooms, price etc.
-        </p>
-    </div>
+      <div class="project-block-container">
+        <h4>Total Fitness Gym App</h4>
+          <p>
+            A web application for a gym manager to manage memberships, classes and sessions. Built using Ruby and Sinatra, and writing data to an SQL database.
+            Full CRUD functionality. Utilised Ruby, Sinatra, SQL, HTML and CSS.
+          </p>
+      </div>
 
-    <div class="projects-block-container">    
-        <img class="media-object" src="../assets/gym-app.png" alt="gym app project image"/>
-    </div>
+      <div class="projects-block-container">    
+          <img class="media-object" src="../assets/gym-app.png" alt="gym app project image"/>
+      </div>
 
-
-    <div class="projects-block-container image">     
-      <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
-    </div>
+      <div class="projects-block-container">     
+        <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
+      </div>
     
-    <div class="project-block-container text">
-      <h4 class="project-heading">Tyrannogotchi</h4>
-        <p>
-          A Web Application built with React and Contentful and Tailwind CSS. Admin can list properties and user can filter properties based on bedrooms, price etc.
-        </p>
-    </div>
-     
-  </div>
+      <div class="project-block-container">
+        <h4 class="project-heading">Tyrannogotchi</h4>
+          <p>
+            A Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
+            Utilised JavaScript, React, Java, Spring, CSS and Bootstrap. User authentication with Okta
+          </p>
+      </div>
+    </div>  
+  </section>
 </template>
 
 <script>
@@ -56,27 +59,31 @@ export default {
 
 <style scoped>
 
-* {box-sizing: border-box;}
-
-
 .title-div {
   background-color: black;
   font-weight: normal;
-  width: 20%;
   text-align: center;
   margin: 0 auto;
+  display: block;
+  line-height: 1;
+  width: 30%;
 }
 
 .title {
   color: white;
   text-align: center;
-  font-weight: normal;
-  padding: 1rem;
+  font-weight:lighter;
+  letter-spacing: 6px;
+  padding: 0.5rem;
 }
 
-#projects-container {
+.projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.projects-block-container {
+  margin: 1.5rem;
 }
 
 .media-object {
@@ -90,6 +97,8 @@ h4, p {
   text-align: center;
   margin: 0 auto;
   padding: 2rem;
+  font-weight: lighter;
+  text-align: center;
 }
 
 h4 {

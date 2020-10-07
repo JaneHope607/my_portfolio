@@ -137,14 +137,6 @@ export default {
    flex-direction: column;
 }
 
-/* .header {
-   text-align: center;
-   font-size: 3rem;
-   font-weight: normal;
-   padding: 0;
-   margin: 0;
-} */
-
 .title-div {
   background-color: black;
   font-weight: normal;
@@ -165,7 +157,8 @@ export default {
 h3 {
    text-align: center;
    font-weight: lighter;
-   padding-bottom: 1rem;
+   padding: 1.5rem;
+   text-align: center;
 }
 
 .skills-block-container {
