@@ -11,7 +11,7 @@
       </div>
       <div class="codeclan">
         <h4>CodeClan</h4>
-          <p>
+          <p class="about-me">
             My journey into coding began at CodeClan on June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
             This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
@@ -20,8 +20,10 @@
     </div>
     <div class="resume">
       <div class="link-cv">
-        <!-- <img class="download-icon" src="../assets/download.jpg" alt="download logo"/> -->
-        <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">Jane O'Donnell Curriculum Vitae Software Developer (pdf)</a>
+        <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">
+          <img class="download-icon" src="../assets/download-button.png" alt="download logo"/>
+          <h4 class="text-cv">JANE O'DONNEL CV SOFTWARE DEVLOPER PDF</h4>
+        </a>
       </div>
     </div>
   </div>
@@ -84,11 +86,7 @@ export default {
   min-height: 100%;
 }
 
-.codeclan-image {
-  background-color: red;
-}
-
-p {
+.about-me {
   text-align: center;
   font-weight: lighter;
   padding-bottom: 1rem;
@@ -109,26 +107,41 @@ h4 {
 
 .resume {
   background-color: rgb(4, 48, 88);
-  height: 10rem;
+  height: 8.5rem;
+  text-align: center;
+  margin: 0 auto;
+  display:flex;
 }
 
 .link-cv {
   width: 80%;
   background-color: rgb(42, 74, 104);
   height: 50%;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  position: relative;
-  color: white;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 1.2rem;
+  margin: auto;
 }
 
 .download-icon {
+  float: left;
+  margin: 0 auto;
+  height: 100%;
+  width: 8.5%;
+  background-color: rgb(107, 135, 161);
+}
+
+.download-icon:hover {
+  background-color: rgb(42, 74, 104);
+}
+
+.text-cv {
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  font-weight: lighter;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  top: 50%;
+  color: white;
+  padding: 1.5rem;
   float: left;
 }
 
