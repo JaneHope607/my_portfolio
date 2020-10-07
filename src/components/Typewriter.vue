@@ -4,7 +4,6 @@
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         </h1>
-        <h2>Developer<span>.</span><br>Designer<span>.</span></h2>
     </div>
 </template>
 
@@ -69,30 +68,26 @@ import { setTimeout } from 'timers';
     align-items: center;
     text-align: center;
   }
-  
-  span {
-        color: rgb(255, 217, 45);
-    }
 
   h1 {
     font-size: 6rem;
     font-weight: normal;
+  }
 
-    span.typed-text {
-      color: rgb(255, 217, 45);
-    }
+  span.typed-text {
+    color: rgb(255, 217, 45);
+  }
 
-    span.cursor {
-      display: inline-block;
-      margin-left: 3px;
-      width: 4px;
-      background-color: #4d4d4d;
-      animation: cursorBlink 1s infinite;
-    }
+  span.cursor {
+    display: inline-block;
+    margin-left: 3px;
+    width: 4px;
+    background-color: #4d4d4d;
+    animation: cursorBlink 1s infinite;
+  }
 
-    span.cursor.typing {
-      animation: none;
-    }
+  span.cursor.typing {
+    animation: none;
   }
 
   @keyframes cursorBlink {

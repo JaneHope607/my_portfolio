@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-     <Typewriter class="typewriter"/>
      <ImageAbout class="image-about"/>
+     <Typewriter class="typewriter"/>
   </div>
 </template>
 
