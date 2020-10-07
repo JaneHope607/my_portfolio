@@ -1,23 +1,24 @@
 <template>
     <section class="container-contact">
 
-        <div class="col-left">
+        <div v-if="!successfulSend" class="col-left">
             <img src="../assets/contact.jpg" />
 		</div>
 
         <div class="col-right">
             <div class="title-div">
-                <h2 class="title">GET IN TOUCH</h2>
+                <h2 v-if="!successfulSend" class="title">GET IN TOUCH</h2>
             </div>
-            <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail">
+            <form class="contact-form" method="post" role="form" @submit.prevent="sendEmail" v-if="!successfulSend">
                 <label for="name">Name</label>
                 <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Enter Your Name"
+                    placeholder="John Smith"
                     v-model="nameText"
                     class="input"
+                    required
                 >
 
                 <label for="email">Email</label>
@@ -25,9 +26,10 @@
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Enter Your Email"
+                    placeholder="example@email.com"
                     v-model="emailText"
                     class="input"
+                    required
                 >
 
                 <label for="subject">Subject</label>
@@ -35,7 +37,7 @@
                     type="text"
                     name="subject"
                     id="subject"
-                    placeholder="Subject"
+                    placeholder="Subject Matter"
                     v-model="subjectText"
                     class="input"
                 >
@@ -48,6 +50,7 @@
                     placeholder="Enter Your Message"
                     v-model="messageText"
                     class="input"
+                    required
                 >
                 </textarea>
 
@@ -58,6 +61,11 @@
                 </section>
             </form>
         </div>
+
+        <div class="success" v-if="successfulSend"> 
+            <h2>Your message was delivered successfully!</h2>
+        </div>
+
     </section>
 </template>
 
@@ -73,6 +81,7 @@ export default {
         emailText: '',
         messageText: '',
         subjectText: '',
+        successfulSend: false,
         };
     },
 
@@ -96,8 +105,9 @@ export default {
                 this.emailText = '';
                 this.messageText = '';
                 this.subjectText  = '';
-                this.loadingMsg = false;  
-                this.$router.push({ path: '/contact' });
+                this.loadingMsg = false;
+                this.successfulSend = true;
+                // this.$router.push({ path: '/contact' });
             }).catch((error) => {        
                 if (error.response) {
                     alert(error.response.data);
@@ -190,6 +200,7 @@ input, textarea {
     border-bottom:2px solid #bebed2;
     font-family: 'Montserrat', sans-serif;
     resize: none;
+    font-size: 1.2rem;
 }
 
 input:focus {
@@ -216,7 +227,7 @@ label {
     width: 50%;
     padding: 0.5rem;
     margin: 1.8rem 0 0;
-    border: .15rem solid #78788c;
+    border: .15rem solid rgb(4, 48, 88);;
     background:0;
     color:#5a5a6e;
     cursor:pointer;
@@ -225,11 +236,16 @@ label {
     text-align: center;
     display: block;
     margin: 2rem auto;
+    background-color: rgb(255, 217, 45);
 }
 
 .button:hover {
-    background:#78788c;
-    color:#fff
+    background: rgb(4, 48, 88);
+    color: #fff;
+}
+
+.success {
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
