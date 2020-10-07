@@ -6,10 +6,10 @@
       <h2 class="title">ABOUT ME</h2>
     </div>
     <div class="experience-div">
-      <div class="codeclan-image">
+      <div class="codeclan">
         <img src="../assets/codeclan.png" alt="codeclan logo"/>
       </div>
-      <div class="codeclan text">
+      <div class="codeclan">
         <h4>CodeClan</h4>
           <p>
             My journey into coding began at CodeClan on June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
@@ -18,8 +18,10 @@
           </p>
       </div>
     </div>
-    <div class="title-div">
-      <h2 class="title">RESUME</h2>
+    <div class="resume">
+      <div class="link-cv">
+        <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">Jane O'Donnell Curriculum Vitae Software Developer (pdf)</a>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +32,11 @@ import Typewriter from '../components/Typewriter.vue';
 import ImageAbout from '../components/ImageAbout.vue';
 
 export default {
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  },
   name: 'home',
   components: {
     Typewriter,
@@ -64,25 +71,52 @@ export default {
 }
 
 .experience-div {
-  background-color: rgb(4, 48, 88);
   max-width: 100%;
   margin: 2rem;
+  display: flex;
+  align-items: stretch;
+  
 }
 
-.codeclan-text {
-  height: auto;
+.codeclan {
+  width: 100%;
+  min-height: 100%;
+}
+
+.codeclan-image {
+  background-color: red;
+}
+
+p {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 1rem;
   text-align: justify;
 }
 
-h4, p {
-   color: white;
+h4 {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 img {
-  width: 50%;
   height: auto;
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+}
+
+.resume {
+  background-color: rgb(4, 48, 88);
+  height: 10rem;
+}
+
+.link-cv {
+  width: 80%;
+  background-color: yellow;
+}
+
+a {
+  text-decoration: none;
 }
 
 </style>
