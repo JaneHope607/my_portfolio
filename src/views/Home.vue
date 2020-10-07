@@ -5,22 +5,44 @@
     <div class="title-div">
       <h2 class="title">ABOUT ME</h2>
     </div>
+
+    <div class="experience-div blue">
+      
+      <div class="codeclan">
+        <h4>About Me</h4>
+          <p class="about-me">
+            My name is Jane O'Donnell, and I'm an Edinburgh born and based Software Developer. I have a passion for creativity. programming and problem solving.
+            In my spare time, I love to play guitar and listen to music. 
+            This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
+            These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
+          </p>
+      </div>
+
+      <div class="codeclan">
+        <img class="codeclan-logo" src="../assets/edinburgh.jpg" alt="edinburgh image"/>
+      </div>
+    </div>
+
+    
     <div class="experience-div">
       <div class="codeclan">
         <img class="codeclan-logo" src="../assets/codeclan.png" alt="codeclan logo"/>
       </div>
+      
       <div class="codeclan">
         <h4>CodeClan</h4>
           <p class="about-me">
-            My journey into coding began at CodeClan on June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
+            At the beginning of 2020, I decided to move from London back to Edinburgh and pursue a career in Software Development. As the world was turned on its head, I found myself with a great opportunity to 
+            properly start my journey into coding by enrolling into CodeClan in June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
             This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
           </p>
       </div>
     </div>
+
     <div class="resume">
       <div class="link-cv">
-        <a :href="`${publicPath}jane-odonnell-cv.pdf`" download="jane-odonnell-cv">
+        <a :href="`${publicPath}jane-odonnell.pdf`" download="jane-odonnell-cv">
           <img class="download-icon" src="../assets/download-button.png" alt="download logo"/>
           <h4 class="text-cv">JANE O'DONNEL CV SOFTWARE DEVLOPER PDF</h4>
         </a>
@@ -78,7 +100,16 @@ export default {
   margin: 2rem;
   display: flex;
   align-items: stretch;
-  
+}
+
+.experience-div.blue {
+  background-color: rgb(4, 48, 88);
+  color: white;
+  margin: 0;
+}
+
+.experience-div.blue img {
+  padding: 1.5rem 1.5rem;
 }
 
 .codeclan {
@@ -89,7 +120,7 @@ export default {
 .about-me {
   text-align: center;
   font-weight: lighter;
-  padding-bottom: 1rem;
+  padding: 0 0 1.5rem 1.5rem;
   text-align: justify;
   font-size: 1.2rem;
 }
@@ -103,6 +134,7 @@ h4 {
   height: auto;
   width: 100%;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .resume {
