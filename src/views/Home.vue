@@ -33,8 +33,7 @@
         <h4>CodeClan</h4>
           <p class="about-me">
             At the beginning of 2020, I decided to move from London back to Edinburgh and pursue a career in Software Development.
-            As the world was turned on its head, I found myself with a great opportunity to 
-            properly start my journey into coding by enrolling into CodeClan in June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
+            As the world was turned on its head, I found myself with a great opportunity to properly kick-start my journey into coding by enrolling into CodeClan. In June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
             This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
             These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
           </p>

@@ -21,7 +21,7 @@
             <li>Libraries used include Bootstrap and Howler</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/group_project_solar_system_app">
+            <a class="github-logo" href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
               <img src="../assets/github-logo.png"/>
             </a>
           </div>
@@ -37,10 +37,10 @@
             <li>Utilised Ruby, Sinatra, SQL, HTML and CSS.</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/codeclan_gym_app_project">
+            <a class="github-logo" href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
               <img src="../assets/github-logo.png"/>
             </a>
-            <a class="link-logo" href="https://total-fitness-gym-app.herokuapp.com/">
+            <a class="link-logo" href="https://total-fitness-gym-app.herokuapp.com/" target="_blank">
               <img src="../assets/link.png"/>
             </a>
           </div>
@@ -64,10 +64,10 @@
             <li>User authentication with Okta.</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotch_project_frontend">
+            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
               <img src="../assets/github-logo.png"/>
             </a>
-            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotchi_project_backend">
+            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
               <img src="../assets/github-logo.png"/>
             </a>
           </div> 
