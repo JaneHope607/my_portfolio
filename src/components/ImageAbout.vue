@@ -42,10 +42,10 @@ h2 {
     vertical-align:middle;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
 
 .profile-image {
-    width: 100%;
+    width: 80%;
 }
 
 }
