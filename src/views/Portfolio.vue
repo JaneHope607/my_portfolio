@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flex-container">
     
     <div class="title-div">
       <h2 class="title">PORTFOLIO</h2>
@@ -21,8 +21,8 @@
             <li>Libraries used include Bootstrap and Howler</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
-              <img src="../assets/github-logo.png"/>
+            <a href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
             </a>
           </div>
       </div>
@@ -37,11 +37,11 @@
             <li>Utilised Ruby, Sinatra, SQL, HTML and CSS.</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
-              <img src="../assets/github-logo.png"/>
+            <a href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
             </a>
             <a class="link-logo" href="https://total-fitness-gym-app.herokuapp.com/" target="_blank">
-              <img src="../assets/link.png"/>
+              <img class="github-logo" src="../assets/link.png"/>
             </a>
           </div>
       </div>
@@ -64,11 +64,11 @@
             <li>User authentication with Okta.</li>
           </ul>
           <div class="link-project">
-            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
-              <img src="../assets/github-logo.png"/>
+            <a href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
             </a>
-            <a class="github-logo" href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
-              <img src="../assets/github-logo.png"/>
+            <a href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
             </a>
           </div> 
         </div>
@@ -90,14 +90,18 @@ export default {
 
 <style scoped>
 
+.flex-container {
+   display: inline-flex;  
+   flex-direction: column;
+}
+
 .title-div {
   background-color: black;
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   line-height: 1;
-  width: 30%;
 }
 
 .title {
@@ -105,18 +109,21 @@ export default {
   text-align: center;
   font-weight:lighter;
   letter-spacing: 6px;
-  padding: 0.5rem;
+  padding-left: 0.2rem;
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 1rem 1rem;
+   max-width: 100%;
+   margin-bottom: 4.5rem;
+   margin-top: 1.5rem;
 }
 
 .project-block-container {
   height: 100%;
-  display: block;
-  position: relative;
+  position:relative
 }
 
 .project-block-container.gym {
@@ -154,22 +161,21 @@ h4 {
   padding: 1.5rem;
 }
 
-.github-logo {
-  display: inline-block;
-}
-
 .link-project {
-  display: block;
-  position: absolute; 
-  bottom: 2rem;
   width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  position: absolute;
 }
 
-.link-project a {
-  margin: auto;
-  text-align: center;
-  display: block;
-  padding: 0.5rem;
+.github-logo {
+  padding-left: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+
 }
 
 </style>
