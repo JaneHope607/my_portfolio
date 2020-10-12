@@ -52,7 +52,7 @@ h2 {
 @media only screen and (max-width: 768px) {
   
 .image-about {
-      display: block;
+    display: block;
     }
 
 .profile-image {
@@ -61,6 +61,16 @@ h2 {
     margin: 0 auto;
 }
 
+.title {
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4rem;
+}
 }
 
 </style>

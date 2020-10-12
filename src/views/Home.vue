@@ -13,7 +13,7 @@
           <p class="about-me">
             My name is Jane O'Donnell, and I'm an Edinburgh born and based Software Developer. I am passionate about design, programming and problem solving.
             I love to take on new challanges, and after graduating from Edinburgh univeristy, I moved to London to pursue a career with a digital marketing startup company.
-            I thrived in the fast-paced and dynamic environemnt there. Creativity is extremely important to me in my work, and I love experimenting with new ideas.
+            Creativity is extremely important to me in my work, and I love experimenting with new ideas.
             My spare time is taken up with long walks in my beautiful city and spending time with family and friends. Aside from this I'm interested in fashion and history.
           </p>
       </div>
@@ -33,9 +33,9 @@
         <h4>CodeClan</h4>
           <p class="about-me">
             At the beginning of 2020, I decided to move from London back to Edinburgh and pursue a career in Software Development.
-            As the world was turned on its head, I found myself with a great opportunity to properly kick-start my journey into coding by enrolling into CodeClan. In June 2020, undertaking a 16 Week, intensive, Professional Software Development Course.
-            This consisted of over 800 hours of instructor led tutoring and guidance. I have built up extensive knowledge of several new languages, working methodologies and technologies.
-            These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding.
+            As the world was turned on its head, I found myself with a great opportunity to properly kick-start my journey into coding by enrolling into CodeClan. In June 2020, I began the 16 week intensive Professional Software Development Course as part of cohort E41.
+            This consisted of over 800 hours of instructor-led lessons, pair-programming, code-alongs and solo and group projects. I have built up an extensive knowledge of several new languages, methodologies and technologies.
+            <!-- These skills were implemented to create a range of applications on my own or as a part of a team, entirely remotely, to cement my learning and understanding. -->
           </p>
       </div>
     </div>
@@ -97,7 +97,7 @@ export default {
 
 .experience-div {
   max-width: 100%;
-  margin: 2rem;
+  /* margin: 2rem; */
   display: flex;
   align-items: stretch;
 }
@@ -120,7 +120,7 @@ export default {
 .about-me {
   text-align: center;
   font-weight: lighter;
-  padding: 0 0 1.5rem 1.5rem;
+  padding: 1.5rem;
   text-align: justify;
   font-size: 1.2rem;
 }
@@ -179,15 +179,17 @@ h4 {
   float: left;
 }
 
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 768px) {
   
-  .experience-div {
-    display: block;
+.experience-div {
+    display: inline-block;
   }
 
 p {
   padding: 1rem;
+  /* font-size: 20px; */
 }
+
 }
 
 </style>
