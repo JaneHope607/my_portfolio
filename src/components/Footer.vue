@@ -28,10 +28,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 6rem;
+    height: 4rem;
     text-align: center;
-    margin: 0 auto;
-    padding-top: 20px;
 }
 
 .footer-links {
@@ -53,7 +51,7 @@
 }
 
 img {
-    height: 3rem;
+    height: 2.5rem;
     width: auto;
     margin: 0 auto;
 }

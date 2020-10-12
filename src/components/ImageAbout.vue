@@ -9,6 +9,12 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: 'ImageAbout'
+}
+</script>
+
 <style scoped>
 
 .image-about {
@@ -42,10 +48,17 @@ h2 {
     vertical-align:middle;
 }
 
-@media only screen and (max-width: 350px) {
+
+@media only screen and (max-width: 768px) {
+  
+.image-about {
+      display: block;
+    }
 
 .profile-image {
     width: 80%;
+    height: auto;
+    margin: 0 auto;
 }
 
 }
