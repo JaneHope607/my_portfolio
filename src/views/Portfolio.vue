@@ -13,12 +13,17 @@
       <div class="project-block-container solar">
         <h4 class="project-heading">Solar System App</h4>
           <p>
-            An interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
-            with the information obtained from an external API. It also hosts a quiz with a leaderboard and scores.
+            This was my first group project that I undertook during my time at CodeClan. I worked with three other students and it was completed in under a week.
+            In short, we produced an interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
+            with the information obtained from an external API. It also hosts a quiz with a leaderboard and scores. 
           </p>
+          <h4>Technologies:</h4>
           <ul>
-            <li>Utilised Vue.js, Express, MongoDB, HTML and CSS.</li>
-            <li>Libraries used include Bootstrap and Howler</li>
+            <li>Vue.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Bootstrap</li>
+            <li>HTML/CSS</li>
           </ul>
           <div class="link-project">
             <a href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
@@ -30,11 +35,15 @@
       <div class="project-block-container gym">
         <h4>Total Fitness Gym App</h4>
           <p>
-            A web application for a gym manager to manage memberships, classes and sessions. Built using Ruby and Sinatra, and writing data to an SQL database.
+            This was my first ever solo project proeduced as a student at CodeClan. It is a web application for a gym manager to manage memberships, classes and sessions. The system is utilising Postgres on the backend that allows the user
+            to save data. Sinatra is being used to handle request routing.
           </p>
+          <h4>Technologies:</h4>
           <ul>
-            <li>Full CRUD functionality.</li>
-            <li>Utilised Ruby, Sinatra, SQL, HTML and CSS.</li>
+            <li>Ruby</li>
+            <li>Sinatra</li>
+            <li>PostgreSQL</li>
+            <li>HTML/CSS</li>
           </ul>
           <div class="link-project">
             <a href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
@@ -57,11 +66,17 @@
       <div class="project-block-container tyrannogotchi">
         <h4 class="project-heading">Tyrannogotchi</h4>
           <p>
-            A Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
+            This was my final project, completed as part of a group with three other girls. We created a Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
+            We utilised Okta for user authentication, so a user can create an account and once logged in, save their progress. As a team, we were ver proud of this feature as it was challenging to implement but we learnt a lot from it.
           </p>
+          <h4>Technologies:</h4>
           <ul>
-            <li>Utilised JavaScript, React, Java, Spring, CSS and Bootstrap.</li>
-            <li>User authentication with Okta.</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Okta</li>
+            <li>HTML/CSS</li>
           </ul>
           <div class="link-project">
             <a href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
@@ -84,18 +99,21 @@
       </div>
       <div class="project-block-container">    
         <p>
-          An interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
-          with the information obtained from an external API. It also hosts a quiz with a leaderboard and scores.
+          This was my first group project that I undertook during my time at CodeClan. I worked with three other students and it was completed in under a week.
+          In short, we produced an interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
+          with the information obtained from an external API. It also hosts a quiz with a leaderboard and scores. 
         </p>
-        <ul>
-          <li>Utilised Vue.js, Express, MongoDB, HTML and CSS.</li>
-          <li>Libraries used include Bootstrap and Howler</li>
-        </ul>
-        <div class="link-project">
+        <h4>Technologies:</h4>
+          <ul>
+            <li>Vue.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Bootstrap</li>
+            <li>HTML/CSS</li>
+          </ul>
           <a href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
-            <img class="github-logo" src="../assets/github-logo.png"/>
+            <img class="github-logo" src="../assets/github-logo.png" alt="github link to project"/>
           </a>
-        </div>
       </div>
 
       <h4>Total Fitness Gym App</h4>
@@ -104,43 +122,49 @@
       </div>
       <div class="project-block-container">
         <p>
-          A web application for a gym manager to manage memberships, classes and sessions. Built using Ruby and Sinatra, and writing data to an SQL database.
+            This was my first ever solo project proeduced as a student at CodeClan. It is a web application for a gym manager to manage memberships, classes and sessions. The system is utilising Postgres on the backend that allows the user
+            to save data. Sinatra is being used to handle request routing.
         </p>
-        <ul>
-          <li>Full CRUD functionality.</li>
-          <li>Utilised Ruby, Sinatra, SQL, HTML and CSS.</li>
-        </ul>
-        <div class="link-project">
+        <h4>Technologies:</h4>
+          <ul>
+            <li>Ruby</li>
+            <li>Sinatra</li>
+            <li>PostgreSQL</li>
+            <li>HTML/CSS</li>
+          </ul>
           <a href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
-            <img class="github-logo" src="../assets/github-logo.png"/>
+            <img class="github-logo" src="../assets/github-logo.png" alt="github link to project"/>
           </a>
           <a class="link-logo" href="https://total-fitness-gym-app.herokuapp.com/" target="_blank">
-            <img class="github-logo" src="../assets/link.png"/>
+            <img class="github-logo" src="../assets/link.png" alt="link to project hosted on heroku"/>
           </a>
-        </div>
       </div>
 
       <h4 class="project-heading">Tyrannogotchi</h4>
-        <div class="project-block-container">   
-          <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
-        </div>
-        <div class="project-block-container">     
-          <p>
-            A Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
-          </p>
+      <div class="project-block-container">   
+        <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
+      </div>
+      <div class="project-block-container">
+        <p>
+          This was my final project, completed as part of a group with three other girls. We created a Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
+          We utilised Okta for user authentication, so a user can create an account and once logged in, save their progress. As a team, we were ver proud of this feature as it was challenging to implement but we learnt a lot from it.
+        </p>
+        <h4>Technologies:</h4>
           <ul>
-            <li>Utilised JavaScript, React, Java, Spring, CSS and Bootstrap.</li>
-            <li>User authentication with Okta.</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Okta</li>
+            <li>HTML/CSS</li>
           </ul>
-          <div class="link-project">
-            <a href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
-              <img class="github-logo" src="../assets/github-logo.png"/>
-            </a>
-            <a href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
-              <img class="github-logo" src="../assets/github-logo.png"/>
-            </a>
-          </div> 
-        </div>
+          <a href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
+            <img class="github-logo" src="../assets/github-logo.png" alt="github link to front-end of project"/>
+          </a>
+          <a href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
+            <img class="github-logo" src="../assets/github-logo.png" alt="github link to back-end of project"/>
+          </a>
+      </div>
 
     </div>  
   </section>
@@ -218,7 +242,6 @@ h4, p, ul {
 p {
   padding: 0 1rem;
   text-align: justify;
-  margin-bottom: 1rem;
 }
 
 li {
@@ -228,7 +251,7 @@ li {
 h4 {
   font-weight:lighter;
   font-size: 2rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .link-project {
@@ -259,6 +282,16 @@ h4 {
 
 p {
   margin: 1.5rem;
+}
+
+ul {
+  margin: 1.5rem;
+}
+
+.github-logo {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
 }
 
 }
