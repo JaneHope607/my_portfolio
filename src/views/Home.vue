@@ -187,7 +187,6 @@ h4 {
 
 p {
   padding: 1rem;
-  /* font-size: 20px; */
 }
 
 }

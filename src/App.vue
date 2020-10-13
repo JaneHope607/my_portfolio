@@ -108,8 +108,12 @@ html {
   max-height: 100%;
 }
 
-html, body {
+html {
   font-size: 8px;
+}
+
+p, ul {
+  font-size: 1.5rem !important;
 }
 
 .mobile-container {
