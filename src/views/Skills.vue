@@ -4,8 +4,9 @@
     <div class="title-div">
       <h2 class="title">LANGUAGES AND TECHNOLOGIES</h2>
     </div>
-      <h3>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
-        However, despite my preference for Front-End, I am very much open to Back-End related positions as I am always keen to learn and explore different languages.</h3>
+      <p>As a Front-End enthusiast, I've worked with a number of technologies. I really enjoy working with JavaScript and using Vue as a framework. 
+        However, despite my preference for Front-End, I am very much open to Back-End related positions as I am always keen to learn and explore different languages.
+      </p>
 
    <div class="skills-block-container">      
       <section class="skills-block">
@@ -142,8 +143,9 @@ export default {
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   line-height: 1;
+  width: 100%;
 }
 
 .title {
@@ -151,10 +153,10 @@ export default {
   text-align: center;
   font-weight:lighter;
   letter-spacing: 6px;
-  padding-left: 0.2rem;
+  padding: 0.5rem;
 }
 
-h3 {
+p {
    text-align: center;
    font-weight: lighter;
    padding: 1.5rem;
