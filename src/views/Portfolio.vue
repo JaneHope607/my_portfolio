@@ -72,6 +72,76 @@
             </a>
           </div> 
         </div>
+    </div> 
+
+    <!-- For Mobile and Ipad screens -->
+
+    <div class="project-container-mobile">  
+
+      <h4 class="project-heading">Solar System App</h4>
+      <div class="project-block-container">     
+        <img class="media-object" src="../assets/solar-system.png" alt="solar system project image"/>
+      </div>
+      <div class="project-block-container">    
+        <p>
+          An interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
+          with the information obtained from an external API. It also hosts a quiz with a leaderboard and scores.
+        </p>
+        <ul>
+          <li>Utilised Vue.js, Express, MongoDB, HTML and CSS.</li>
+          <li>Libraries used include Bootstrap and Howler</li>
+        </ul>
+        <div class="link-project">
+          <a href="https://github.com/JaneHope607/group_project_solar_system_app" target="_blank">
+            <img class="github-logo" src="../assets/github-logo.png"/>
+          </a>
+        </div>
+      </div>
+
+      <h4>Total Fitness Gym App</h4>
+      <div class="project-block-container">    
+        <img class="media-object" src="../assets/gym-app.png" alt="gym app project image"/>
+      </div>
+      <div class="project-block-container">
+        <p>
+          A web application for a gym manager to manage memberships, classes and sessions. Built using Ruby and Sinatra, and writing data to an SQL database.
+        </p>
+        <ul>
+          <li>Full CRUD functionality.</li>
+          <li>Utilised Ruby, Sinatra, SQL, HTML and CSS.</li>
+        </ul>
+        <div class="link-project">
+          <a href="https://github.com/JaneHope607/codeclan_gym_app_project" target="_blank">
+            <img class="github-logo" src="../assets/github-logo.png"/>
+          </a>
+          <a class="link-logo" href="https://total-fitness-gym-app.herokuapp.com/" target="_blank">
+            <img class="github-logo" src="../assets/link.png"/>
+          </a>
+        </div>
+      </div>
+
+      <h4 class="project-heading">Tyrannogotchi</h4>
+        <div class="project-block-container">   
+          <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
+        </div>
+        <div class="project-block-container">     
+          <p>
+            A Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
+          </p>
+          <ul>
+            <li>Utilised JavaScript, React, Java, Spring, CSS and Bootstrap.</li>
+            <li>User authentication with Okta.</li>
+          </ul>
+          <div class="link-project">
+            <a href="https://github.com/JaneHope607/tyrannogotch_project_frontend" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
+            </a>
+            <a href="https://github.com/JaneHope607/tyrannogotchi_project_backend" target="_blank">
+              <img class="github-logo" src="../assets/github-logo.png"/>
+            </a>
+          </div> 
+        </div>
+
     </div>  
   </section>
 </template>
@@ -173,8 +243,23 @@ h4 {
   margin: 0 auto;
 }
 
+.project-container-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
+.project-container-mobile {
+  display: block;
+}
+
+.project-container {
+  display: none;
+}
+
+p {
+  margin: 1.5rem;
+}
 
 }
 
