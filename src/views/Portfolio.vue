@@ -11,7 +11,7 @@
       </div>
     
       <div class="project-block-container solar">
-        <h4 class="project-heading">Solar System App</h4>
+        <h3>Solar System App</h3>
           <p>
             This was my first group project that I undertook during my time at CodeClan. I worked with three other students and it was completed in under a week.
             In short, we produced an interactive online browser application for the BBC. This app displays information on the planets in our solar system in a fun and interactive manner,
@@ -33,7 +33,7 @@
       </div>
 
       <div class="project-block-container gym">
-        <h4>Total Fitness Gym App</h4>
+        <h3>Total Fitness Gym App</h3>
           <p>
             This was my first ever solo project proeduced as a student at CodeClan. It is a web application for a gym manager to manage memberships, classes and sessions. The system is utilising Postgres on the backend that allows the user
             to save data. Sinatra is being used to handle request routing.
@@ -64,7 +64,7 @@
       </div>
     
       <div class="project-block-container tyrannogotchi">
-        <h4 class="project-heading">Tyrannogotchi</h4>
+        <h3>Tyrannogotchi</h3>
           <p>
             This was my final project, completed as part of a group with three other girls. We created a Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
             We utilised Okta for user authentication, so a user can create an account and once logged in, save their progress. As a team, we were ver proud of this feature as it was challenging to implement but we learnt a lot from it.
@@ -93,7 +93,7 @@
 
     <div class="project-container-mobile">  
 
-      <h4 class="project-heading">Solar System App</h4>
+      <h3>Solar System App</h3>
       <div class="project-block-container">     
         <img class="media-object" src="../assets/solar-system.png" alt="solar system project image"/>
       </div>
@@ -116,7 +116,7 @@
           </a>
       </div>
 
-      <h4>Total Fitness Gym App</h4>
+      <h3>Total Fitness Gym App</h3>
       <div class="project-block-container">    
         <img class="media-object" src="../assets/gym-app.png" alt="gym app project image"/>
       </div>
@@ -140,7 +140,7 @@
           </a>
       </div>
 
-      <h4 class="project-heading">Tyrannogotchi</h4>
+      <h3>Tyrannogotchi</h3>
       <div class="project-block-container">   
         <img class="media-object" src="../assets/tyrannogotchi.png" alt="tyrannogotchi project image"/>
       </div>
@@ -212,7 +212,7 @@ export default {
    gap: 1rem 1rem;
    max-width: 100%;
    margin-bottom: 4.5rem;
-   margin-top: 1.5rem;
+   margin-top: 2rem;
 }
 
 .project-block-container {
@@ -232,7 +232,7 @@ export default {
   box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
 }
 
-h4, p, ul {
+h4, p, ul, h3 {
   text-align: center;
   margin: 0 auto;
   font-weight: lighter;
@@ -248,9 +248,16 @@ li {
   text-align: justify;
 }
 
-h4 {
+h3 {
   font-weight:lighter;
   font-size: 2rem;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+h4 {
+  font-weight:lighter;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 
@@ -274,6 +281,7 @@ h4 {
 
 .project-container-mobile {
   display: block;
+  margin-top: 2rem;
 }
 
 .project-container {
@@ -282,6 +290,10 @@ h4 {
 
 p {
   margin: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem !important;
 }
 
 ul {
