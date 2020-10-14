@@ -236,6 +236,8 @@ label {
     display: block;
     margin: 2rem auto;
     background-color: rgb(255, 217, 45);
+    -webkit-appearance:none;
+    opacity: 1;
 }
 
 .button:hover {

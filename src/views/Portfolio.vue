@@ -67,7 +67,7 @@
         <h3>Tyrannogotchi</h3>
           <p>
             This was my final project, completed as part of a group with three other girls. We created a Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
-            We utilised Okta for user authentication, so a user can create an account and once logged in, save their progress. As a team, we were ver proud of this feature as it was challenging to implement but we learnt a lot from it.
+            Utilised Okta for user authentication, so a user can create an account and once logged in, save their progress.
           </p>
           <h4>Technologies:</h4>
           <ul>
@@ -147,7 +147,7 @@
       <div class="project-block-container">
         <p>
           This was my final project, completed as part of a group with three other girls. We created a Tamagotchi-inspired web application where a user can create an account and take care of a virtual T-Rex by feeding and healing them.
-          We utilised Okta for user authentication, so a user can create an account and once logged in, save their progress. As a team, we were ver proud of this feature as it was challenging to implement but we learnt a lot from it.
+          Utilised Okta for user authentication, so a user can create an account and once logged in, save their progress.
         </p>
         <h4>Technologies:</h4>
           <ul>
